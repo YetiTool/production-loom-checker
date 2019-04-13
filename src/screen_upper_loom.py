@@ -10,6 +10,7 @@ from kivy.uix.floatlayout import FloatLayout
 from kivy.properties import ObjectProperty, ListProperty, NumericProperty, StringProperty # @UnresolvedImport
 from kivy.uix.widget import Widget
 from kivy.clock import Clock
+from kivy.uix.widget import Widget
 
 import sys, os
 
@@ -17,10 +18,49 @@ import sys, os
 # Kivy UI builder:
 Builder.load_string("""
 
+<PinIndicator>:
+
+    pin_status:pin_status
+    
+    Button:
+        id: pin_status
+        size: self.parent.size
+        pos: self.parent.pos 
+        background_normal: ''
+        background_color: 1, .3, .4, .85
+        text_size: self.size
+        font_size: '25sp'
+        markup: True
+        text: ""
+      
+
+<CircuitTest>:
+
+    pin_line:pin_line
+    circuit_name:circuit_name
+    
+    BoxLayout:
+        
+        size: self.parent.size
+        pos: self.parent.pos    
+    
+        Label:
+            id: circuit_name
+            size: self.parent.size
+            pos: self.parent.pos    
+            size_hint_x: 1
+        
+        BoxLayout:
+            id:pin_line
+            size: self.parent.size
+            pos: self.parent.pos    
+            orientation: 'horizontal'
+            size_hint_x: 9
+        
 <UpperLoomScreen>:
 
-    homing_label:homing_label
-
+    pin_matrix:pin_matrix
+    
     canvas:
         Color: 
             rgba: hex('#0D47A1ff')
@@ -29,58 +69,33 @@ Builder.load_string("""
             pos: self.pos
              
     BoxLayout:
-        orientation: 'horizontal'
-        padding: 70
-        spacing: 70
+        size: self.parent.size
+        pos: self.parent.pos      
+
+
+        id:pin_matrix
+        orientation: 'vertical'
+        padding: 10
+        spacing: 10
         size_hint_x: 1
 
-        BoxLayout:
-            orientation: 'vertical'
-            size_hint_x: 1
-#             spacing: 20
-#             padding: 10
-            
-                
-            Label:
-                id: homing_label
-                text_size: self.size
-                size_hint_y: 0.5
-                text: 'Ya mama'
-                markup: True
-                font_size: '40sp'   
-                valign: 'bottom'
-                halign: 'center'
-                
-            AnchorLayout: 
-                Button:
-                    size_hint_x: 0.25
-                    size_hint_y: 0.35
-                    halign: 'center'
-                    valign: 'middle'
-                    background_normal: ''
-                    background_color: hex('#1E88E5ff')
-                    on_release: 
-                        root.quit_to_lobby()
-                    
-                    Label:
-                        #size: self.texture_size
-                        text: '[b]Quit[/b]'
-                        size: self.parent.size
-                        pos: self.parent.pos
-                        text_size: self.size
-                        valign: 'middle'
-                        halign: 'center'
-                        font_size: '22sp'
-                        markup: True
-            Label: 
-                size_hint_y: 0.2
-                text: 'Squaring the axes will cause the machine to make a stalling noise. This is normal.'
-                markup: True
-                font_size: '20sp' 
-                valign: 'top'
-                
+        
 
 """)
+        
+
+class PinIndicator(Widget):
+    
+    def set_pin_status(self, digital_status):
+        self.pin_status.text = str(digital_status)
+
+
+class CircuitTest(Widget):
+    
+    def add_pin(self, digital_status):
+        pin = PinIndicator()
+        pin.set_pin_status(digital_status)
+        self.pin_line.add_widget(pin)
 
 
 class UpperLoomScreen(Screen):
@@ -90,7 +105,19 @@ class UpperLoomScreen(Screen):
     
         super(UpperLoomScreen, self).__init__(**kwargs)
         self.sm=kwargs['screen_manager']
-    
+
+        i=0 
+        while i < 10:
+            circuit = CircuitTest()
+            circuit.circuit_name.text = "Test " + str(i)
+            p=0 
+            while p < 30:
+                circuit.add_pin(0)
+                p += 1
+        
+            self.pin_matrix.add_widget(circuit)
+            i += 1
+        
     
     def quit_to_lobby(self):
         self.sm.current = 'lobby'
