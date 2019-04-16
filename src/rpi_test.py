@@ -78,6 +78,10 @@ Builder.load_string("""
 
 """)
 
+if sys.platform != "win32":
+    
+    import RPi.GPIO as GPIO           # import RPi.GPIO module  
+    GPIO.setmode(GPIO.BOARD)            # choose BCM (Broadcom chip pin number) or BOARD (GPIO pin number)
 
 class RpiTestScreen(Screen):
 
@@ -90,13 +94,8 @@ class RpiTestScreen(Screen):
         self.sm=kwargs['screen_manager']
         
         if sys.platform != "win32":
-            
-            import RPi.GPIO as GPIO           # import RPi.GPIO module  
-
-            GPIO.setmode(GPIO.BOARD)            # choose BCM (Broadcom chip pin number) or BOARD (GPIO pin number)
             GPIO.setup(3, GPIO.OUT, initial = 0)   # set a port/pin as an output   
             GPIO.setup(5, GPIO.IN)   # set a port/pin as an output   
-        
             Clock.schedule_interval(self.check_pin, 0.5) # Delay for grbl to initialize
 
  
