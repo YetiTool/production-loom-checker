@@ -77,7 +77,7 @@ Builder.load_string("""
 if sys.platform != "win32":
     import RPi.GPIO as GPIO           # import RPi.GPIO module  
     GPIO.setmode(GPIO.BOARD)            # choose BCM (Broadcom chip pin number) or BOARD (GPIO pin number)
-    GPIO.setup(3, GPIO.OUT, initial = 1) # set a port/pin as an output   
+    GPIO.setup(3, GPIO.OUT, initial = 1)  # set a port/pin as an output   
 
 class RpiTestScreen(Screen):
     
