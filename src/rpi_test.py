@@ -94,8 +94,8 @@ class RpiTestScreen(Screen):
         self.sm=kwargs['screen_manager']
         
         if sys.platform != "win32":
-            GPIO.setup(3, GPIO.OUT, initial = 0)   # set a port/pin as an output   
-            GPIO.setup(5, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)   # set a port/pin as an output   
+            GPIO.setup(38, GPIO.OUT, initial = 0)   # set a port/pin as an output   
+            GPIO.setup(40, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)   # set a port/pin as an output   
             Clock.schedule_interval(self.check_pin, 0.5) # Delay for grbl to initialize
 
  
@@ -117,8 +117,7 @@ class RpiTestScreen(Screen):
 
     def check_pin(self, dt):
         
-        GPIO.setup(5, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)   # set a port/pin as an output   
-        print GPIO.input(5)
+        print GPIO.input(40)
         
         if GPIO.input(5):
             self.pinBStatus.text = '1'
