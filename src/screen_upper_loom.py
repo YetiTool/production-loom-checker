@@ -82,7 +82,8 @@ Builder.load_string("""
         
 
 """)
-        
+
+pin_list = []        
 
 class PinIndicator(Widget):
     
@@ -99,7 +100,6 @@ class CircuitTest(Widget):
 
 
 class UpperLoomScreen(Screen):
-    
     
     def __init__(self, **kwargs):
     
@@ -121,3 +121,6 @@ class UpperLoomScreen(Screen):
     
     def quit_to_lobby(self):
         self.sm.current = 'lobby'
+        
+
+        
