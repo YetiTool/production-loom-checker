@@ -105,21 +105,21 @@ class RpiTestScreen(Screen):
             #turn soft limits, hard limts and homing cycle ON
             print 'Pin toggle OFF'
             if sys.platform != "win32":
-                GPIO.output(3, GPIO.LOW)
+                GPIO.output(38, GPIO.LOW)
 
             
         if self.pin_toggle_mode == 'down': # virtual hw mode ON
             #turn soft limits, hard limts and homing cycle OFF
             print 'Pin toggle ON'
             if sys.platform != "win32":
-                GPIO.output(3, GPIO.HIGH)
+                GPIO.output(38, GPIO.HIGH)
 
 
     def check_pin(self, dt):
         
         print GPIO.input(40)
         
-        if GPIO.input(5):
+        if GPIO.input(40):
             self.pinBStatus.text = '1'
         else: 
             self.pinBStatus.text = '0' 
