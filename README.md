@@ -1,11 +1,24 @@
-Assuming an EasyCut platform image:
+### Preparation
 
-#### App installation
+These steps assume an EasyCut installation & console platform
+
+### App installation
 
 * Clone from the SmartBench repository:
   * cd && git clone https://github.com/YetiTool/production-loom-checker.git
 
-#### Autostart
+### Autostart
+
+#### Disable EasyCut autostart
+
+To disable the pi from autostarting EasyCut app on booting:
+* comment out the contents of the bash script:
+  * `sudo nano starteasycut.sh` 
+  * save & quit
+  * `sudo reboot` to check (you'll only get the logo screen of course, since it's on silent boot)
+
+#### Enable Loomchecker autostart
+
 To enable the pi to autostart LoomChecker app on booting
 * create bash script to run app
   * `touch /home/pi/startloomchecker.sh`
