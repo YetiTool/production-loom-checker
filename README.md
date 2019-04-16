@@ -5,7 +5,7 @@ These steps assume an EasyCut installation & console platform
 ### App installation
 
 * Clone from the SmartBench repository:
-  * cd && git clone https://github.com/YetiTool/production-loom-checker.git
+  * `cd && git clone https://github.com/YetiTool/production-loom-checker.git`
 
 ### Autostart
 
