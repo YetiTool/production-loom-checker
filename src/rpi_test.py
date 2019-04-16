@@ -74,7 +74,7 @@ Builder.load_string("""
             font_size: '25sp'
             markup: True
             text: "Quit to lobby"
-        
+         
 
 """)
 
