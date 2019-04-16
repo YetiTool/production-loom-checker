@@ -95,7 +95,7 @@ class RpiTestScreen(Screen):
         
         if sys.platform != "win32":
             GPIO.setup(3, GPIO.OUT, initial = 0)   # set a port/pin as an output   
-            GPIO.setup(5, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)   # set a port/pin as an output   
+            GPIO.setup(5, GPIO.IN, pull_up_down=GPIO.PUD_UP)   # set a port/pin as an output   
             Clock.schedule_interval(self.check_pin, 0.5) # Delay for grbl to initialize
 
  
