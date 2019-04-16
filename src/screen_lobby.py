@@ -64,7 +64,7 @@ Builder.load_string("""
                         disabled: False
                         background_color: hex('#FFFFFF00')
                         on_release: 
-                            root.goto_upper_loom()
+                            root.sm.current = 'upper_loom'
                             self.background_color = hex('#FFFFFF00')
                         on_press:
                             self.background_color = hex('#FFFFFF00')
@@ -91,14 +91,12 @@ Builder.load_string("""
                                             
                     Button:
                         id: load_button
-                        disabled: True
+                        disabled: False
                         size_hint_y: 8
                         background_color: hex('#FFFFFF00')
                         on_release: 
-#                             root.go_to_initial_screen(1)
-#                            root.manager.current = 'template'
-#                            root.manager.current = 'vj_polygon'
                             self.background_color = hex('#FFFFFF00')
+                            root.sm.current = 'rpi_test'
                         on_press:
                             self.background_color = hex('#FFFFFF00')
                         BoxLayout:
@@ -115,7 +113,7 @@ Builder.load_string("""
                     Label:
                         size_hint_y: 1
                         font_size: '25sp'
-                        text: 'Lower Loom'
+                        text: 'RPi Test'
                         
                 BoxLayout:
                     orientation: 'vertical'
@@ -124,12 +122,12 @@ Builder.load_string("""
 
                     Button:
                         id: load_button
-                        disabled: True
+                        disabled: False
                         size_hint_y: 8
                         background_color: hex('#FFFFFF00')
                         on_release: 
-#                             root.go_to_initial_screen(1)
                             self.background_color = hex('#FFFFFF00')
+                            root.sm.current = 'settings_screen'
                         on_press:
                             self.background_color = hex('#FFFFFF00')
                         BoxLayout:
@@ -138,7 +136,7 @@ Builder.load_string("""
                             pos: self.parent.pos
                             Image:
                                 id: image_select
-                                source: "./img/lobby_pro.png"
+                                source: "./img/settings_cog.png"
                                 center_x: self.parent.center_x
                                 y: self.parent.y
                                 size: self.parent.width, self.parent.height
@@ -146,7 +144,7 @@ Builder.load_string("""
                     Label:
                         size_hint_y: 1
                         font_size: '25sp'
-                        text: ''
+                        text: 'Settings'
                         
             # Carousel pane 2
         
@@ -323,8 +321,5 @@ class LobbyScreen(Screen):
         self.sm=kwargs['screen_manager']
 
 
-    def goto_upper_loom(self):
-        self.sm.current = 'upper_loom'
-    
     
         

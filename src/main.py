@@ -23,6 +23,9 @@ from kivy.core.window import Window
 
 import screen_lobby
 import screen_upper_loom
+import rpi_test
+import screen_settings
+
 
 
 class SkavaUI(App):
@@ -36,11 +39,14 @@ class SkavaUI(App):
         # initialise the screens
         upper_loom_screen = screen_upper_loom.UpperLoomScreen(name='upper_loom', screen_manager = sm)
         lobby_screen = screen_lobby.LobbyScreen(name='lobby', screen_manager = sm)
-
+        rpi_test_screen = rpi_test.RpiTestScreen(name='rpi_test', screen_manager = sm)
+        settings_screen = screen_settings.SettingsScreen(name='settings_screen', screen_manager = sm)
 
         # add the screens to screen manager
         sm.add_widget(lobby_screen)
         sm.add_widget(upper_loom_screen)
+        sm.add_widget(rpi_test_screen)
+        sm.add_widget(settings_screen)
 
         # set screen to start on
         sm.current = 'lobby'
