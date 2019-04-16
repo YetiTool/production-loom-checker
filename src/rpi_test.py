@@ -38,8 +38,9 @@ Builder.load_string("""
         spacing: 10
         size_hint_x: 1
 
-        Button:
-            on_press: root.toggle_pinA()
+            
+        ToggleButton:
+            state: root.pin_toggle_mode
             size: self.parent.size
             pos: self.parent.pos 
             background_normal: ''
@@ -47,7 +48,10 @@ Builder.load_string("""
             text_size: self.size
             font_size: '25sp'
             markup: True
-            text: "Toggle Pin A"
+            text: 'Toggle pin'
+            on_state:
+                root.pin_toggle_mode = self.state
+                root.pin_toggled()
         
         Button:
             id: pinBStatus
@@ -80,16 +84,29 @@ if sys.platform != "win32":
     GPIO.setup(3, GPIO.OUT, initial = 1)  # set a port/pin as an output   
 
 class RpiTestScreen(Screen):
+
+    pin_toggle_mode = StringProperty('normal') # toggles between 'normal' or 'down'(/looks like it's been pressed)
     
     
     def __init__(self, **kwargs):
     
         super(RpiTestScreen, self).__init__(**kwargs)
         self.sm=kwargs['screen_manager']
+ 
+    def pin_toggled(self):
         
+        if self.pin_toggle_mode == 'normal': # virtual hw mode OFF
+            #turn soft limits, hard limts and homing cycle ON
+            print 'Pin toggle OFF'
+            if sys.platform != "win32":
+                GPIO.output(3, GPIO.LOW)
 
-    def toggle_pinA(self):
-        
-        if sys.platform != "win32":
-            pass
+            
+        if self.pin_toggle_mode == 'down': # virtual hw mode ON
+            #turn soft limits, hard limts and homing cycle OFF
+            print 'Pin toggle ON'
+            if sys.platform != "win32":
+                GPIO.output(3, GPIO.HIGH)
+
+
             
