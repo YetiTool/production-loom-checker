@@ -78,10 +78,6 @@ Builder.load_string("""
 
 """)
 
-if sys.platform != "win32":
-    import RPi.GPIO as GPIO           # import RPi.GPIO module  
-    GPIO.setmode(GPIO.BOARD)            # choose BCM (Broadcom chip pin number) or BOARD (GPIO pin number)
-    GPIO.setup(3, GPIO.OUT, initial = 1)   # set a port/pin as an output   
 
 class RpiTestScreen(Screen):
 
@@ -92,6 +88,17 @@ class RpiTestScreen(Screen):
     
         super(RpiTestScreen, self).__init__(**kwargs)
         self.sm=kwargs['screen_manager']
+        
+        if sys.platform != "win32":
+            
+            import RPi.GPIO as GPIO           # import RPi.GPIO module  
+
+            GPIO.setmode(GPIO.BOARD)            # choose BCM (Broadcom chip pin number) or BOARD (GPIO pin number)
+            GPIO.setup(3, GPIO.OUT, initial = 0)   # set a port/pin as an output   
+            GPIO.setup(5, GPIO.IN)   # set a port/pin as an output   
+        
+            Clock.schedule_interval(self.check_pin, 0.5) # Delay for grbl to initialize
+
  
     def pin_toggled(self):
         
@@ -109,4 +116,9 @@ class RpiTestScreen(Screen):
                 GPIO.output(3, GPIO.HIGH)
 
 
-            
+    def check_pin(self, dt):
+        
+        if GPIO.input(5):
+            self.pinBStatus.text = '1'
+        else: 
+            self.pinBStatus.text = '0' 
