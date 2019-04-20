@@ -1,6 +1,6 @@
 '''
 Created on 16 Nov 2017
-@author: Ed
+@author: eD
 YetiTool's production console to check looms for SmartBench
 www.yetitool.com
 '''
@@ -25,7 +25,7 @@ import screen_lobby
 import screen_upper_loom
 import rpi_test
 import screen_settings
-
+import screen_intro
 
 
 class SkavaUI(App):
@@ -41,12 +41,14 @@ class SkavaUI(App):
         lobby_screen = screen_lobby.LobbyScreen(name='lobby', screen_manager = sm)
         rpi_test_screen = rpi_test.RpiTestScreen(name='rpi_test', screen_manager = sm)
         settings_screen = screen_settings.SettingsScreen(name='settings_screen', screen_manager = sm)
+        intro_screen = screen_intro.IntroScreen(name='intro_screen', screen_manager = sm)
 
         # add the screens to screen manager
         sm.add_widget(lobby_screen)
         sm.add_widget(upper_loom_screen)
         sm.add_widget(rpi_test_screen)
         sm.add_widget(settings_screen)
+        sm.add_widget(intro_screen)
 
         # set screen to start on
         sm.current = 'lobby'

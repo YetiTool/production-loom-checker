@@ -1,7 +1,7 @@
 '''
 Created on 12 Feb 2019
 
-@author: Letty
+@author: eD
 '''
 import kivy
 from kivy.lang import Builder

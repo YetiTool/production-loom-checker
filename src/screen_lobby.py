@@ -1,7 +1,7 @@
 '''
 Created on 19 Aug 2017
 
-@author: Ed
+@author: eD
 '''
 # config
 
@@ -9,6 +9,7 @@ import kivy
 from kivy.lang import Builder
 from kivy.uix.screenmanager import ScreenManager, Screen, NoTransition, SlideTransition
 from kivy.uix.floatlayout import FloatLayout
+from kivy.uix.gridlayout import GridLayout
 from kivy.properties import ObjectProperty, ListProperty, NumericProperty # @UnresolvedImport
 from kivy.uix.popup import Popup
 from kivy.uix.widget import Widget
@@ -27,8 +28,8 @@ Builder.load_string("""
 
 <LobbyScreen>:
 
-    carousel:carousel
-
+    grid:grid
+    
     canvas.before:
         Color: 
             rgba: hex('#0d47a1FF')
@@ -36,290 +37,169 @@ Builder.load_string("""
             size: self.size
             pos: self.pos
 
-    BoxLayout:
-        orientation: 'vertical'
-        size: self.parent.size
-        pos: self.parent.pos
-        padding: 0
-        spacing: 0
-
-        Carousel:
-            size_hint_y: 340
-            id: carousel
-            loop: True
                             
-            BoxLayout:
-                orientation: 'horizontal'
-                padding: 70
-                spacing: 70
+    GridLayout:
 
-                BoxLayout:
-                    orientation: 'vertical'
-                    size_hint_x: 1
-                    spacing: 20
-    
-                    Button:
-                        size_hint_y: 8
-                        id: load_button
-                        disabled: False
-                        background_color: hex('#FFFFFF00')
-                        on_release: 
-                            root.sm.current = 'upper_loom'
-                            self.background_color = hex('#FFFFFF00')
-                        on_press:
-                            self.background_color = hex('#FFFFFF00')
-                        BoxLayout:
-                            padding: 0
-                            size: self.parent.size
-                            pos: self.parent.pos
-                            Image:
-                                id: image_select
-                                source: "./img/lobby_pro.png"
-                                center_x: self.parent.center_x
-                                center_y: self.parent.center_y
-                                size: self.parent.width, self.parent.height
-                                allow_stretch: True 
-                    Label:
-                        size_hint_y: 1
-                        font_size: '25sp'
-                        text: 'Upper Loom'
-                        
-                BoxLayout:
-                    orientation: 'vertical'
-                    size_hint_x: 1
-                    spacing: 20
-                                            
-                    Button:
-                        id: load_button
-                        disabled: False
-                        size_hint_y: 8
-                        background_color: hex('#FFFFFF00')
-                        on_release: 
-                            self.background_color = hex('#FFFFFF00')
-                            root.sm.current = 'rpi_test'
-                        on_press:
-                            self.background_color = hex('#FFFFFF00')
-                        BoxLayout:
-                            padding: 0
-                            size: self.parent.size
-                            pos: self.parent.pos
-                            Image:
-                                id: image_select
-                                source: "./img/lobby_pro.png"
-                                center_x: self.parent.center_x
-                                y: self.parent.y
-                                size: self.parent.width, self.parent.height
-                                allow_stretch: True 
-                    Label:
-                        size_hint_y: 1
-                        font_size: '25sp'
-                        text: 'RPi Test'
-                        
-                BoxLayout:
-                    orientation: 'vertical'
-                    size_hint_x: 1
-                    spacing: 20
+        id: grid
+        rows: 2
+        padding: 30
+        spacing: 30
 
-                    Button:
-                        id: load_button
-                        disabled: False
-                        size_hint_y: 8
-                        background_color: hex('#FFFFFF00')
-                        on_release: 
-                            self.background_color = hex('#FFFFFF00')
-                            root.sm.current = 'settings_screen'
-                        on_press:
-                            self.background_color = hex('#FFFFFF00')
-                        BoxLayout:
-                            padding: 0
-                            size: self.parent.size
-                            pos: self.parent.pos
-                            Image:
-                                id: image_select
-                                source: "./img/settings_cog.png"
-                                center_x: self.parent.center_x
-                                y: self.parent.y
-                                size: self.parent.width, self.parent.height
-                                allow_stretch: True 
-                    Label:
-                        size_hint_y: 1
-                        font_size: '25sp'
-                        text: 'Settings'
-                        
-            # Carousel pane 2
-        
-            BoxLayout:
-                orientation: 'horizontal'
-                padding: 70
-                spacing: 70
-
-                BoxLayout:
-                    orientation: 'vertical'
-                    size_hint_x: 1
-                    spacing: 20
-    
-                    Button:
-                        size_hint_y: 8
-                        id: load_button
-                        disabled: False
-                        background_color: hex('#FFFFFF00')
-                        on_release: 
-#                             root.go_to_initial_screen(1)
-                            self.background_color = hex('#FFFFFF00')
-                        on_press:
-                            self.background_color = hex('#FFFFFF00')
-                        BoxLayout:
-                            padding: 0
-                            size: self.parent.size
-                            pos: self.parent.pos
-                            Image:
-                                id: image_select
-                                source: "./img/lobby_pro.png"
-                                center_x: self.parent.center_x
-                                center_y: self.parent.center_y
-                                size: self.parent.width, self.parent.height
-                                allow_stretch: True 
-                    Label:
-                        size_hint_y: 1
-                        font_size: '25sp'
-                        text: ''
-                        
-                BoxLayout:
-                    orientation: 'vertical'
-                    size_hint_x: 1
-                    spacing: 20
-                                            
-                    Button:
-                        id: load_button
-                        disabled: False
-                        size_hint_y: 8
-                        background_color: hex('#FFFFFF00')
-                        on_release: 
-#                             root.go_to_initial_screen(1)
-                            self.background_color = hex('#FFFFFF00')
-                        on_press:
-                            self.background_color = hex('#FFFFFF00')
-                        BoxLayout:
-                            padding: 0
-                            size: self.parent.size
-                            pos: self.parent.pos
-                            Image:
-                                id: image_select
-                                source: "./img/lobby_pro.png"
-                                center_x: self.parent.center_x
-                                y: self.parent.y
-                                size: self.parent.width, self.parent.height
-                                allow_stretch: True 
-                    Label:
-                        size_hint_y: 1
-                        font_size: '25sp'
-                        text: ''
-                        
-                BoxLayout:
-                    orientation: 'vertical'
-                    size_hint_x: 1
-                    spacing: 20
-
-                    Button:
-                        id: load_button
-                        disabled: False
-                        size_hint_y: 8
-                        background_color: hex('#FFFFFF00')
-                        on_release: 
-#                             root.go_to_initial_screen(1)
-                            self.background_color = hex('#FFFFFF00')
-                        on_press:
-                            self.background_color = hex('#FFFFFF00')
-                        BoxLayout:
-                            padding: 0
-                            size: self.parent.size
-                            pos: self.parent.pos
-                            Image:
-                                id: image_select
-                                source: "./img/lobby_pro.png"
-                                center_x: self.parent.center_x
-                                y: self.parent.y
-                                size: self.parent.width, self.parent.height
-                                allow_stretch: True 
-                    Label:
-                        size_hint_y: 1
-                        font_size: '25sp'
-                        text: ''
-
+                
         BoxLayout:
-            size_hint_y: 6
-            size: self.parent.size
-            pos: self.parent.pos
-          
-            Image:
-                source: "./img/lobby_separator.png"
-
-
-        BoxLayout:
-            size_hint_y: 134
-            size: self.parent.size
-            pos: self.parent.pos
-            padding: 40
-            orientation: 'horizontal'
-            
-            Button:
-                disabled: False
-                size_hint_y: 1
-                background_color: hex('#FFFFFF00')
-                on_release: 
-                    carousel.load_previous()
-                    self.background_color = hex('#FFFFFF00')
-                on_press:
-                    self.background_color = hex('#FFFFFF00')
-                BoxLayout:
-                    size: self.parent.size
-                    pos: self.parent.pos
-                    Image:
-                        id: image_cancel
-                        source: "./img/lobby_scrollleft.png"
-                        center_x: self.parent.center_x
-                        y: self.parent.y
-                        size: self.parent.width, self.parent.height
-                        allow_stretch: True 
-
-            Label:
-                size_hint_y: 1
-
-            Label:
-                size_hint_y: 1
+            orientation: 'vertical'
+            size_hint_x: 1
+            spacing: 20
 
             Button:
                 id: load_button
                 disabled: False
-                size_hint_y: 1
+                size_hint_y: 8
                 background_color: hex('#FFFFFF00')
                 on_release: 
-                    carousel.load_next(mode='next')
                     self.background_color = hex('#FFFFFF00')
+                    root.sm.current = 'settings_screen'
                 on_press:
                     self.background_color = hex('#FFFFFF00')
                 BoxLayout:
+                    padding: 0
                     size: self.parent.size
                     pos: self.parent.pos
                     Image:
                         id: image_select
-                        source: "./img/lobby_scrollright.png"
+                        source: "./img/settings_cog.png"
                         center_x: self.parent.center_x
                         y: self.parent.y
                         size: self.parent.width, self.parent.height
                         allow_stretch: True 
+            Label:
+                size_hint_y: 1
+                font_size: '25sp'
+                text: 'Settings'
 
+        BoxLayout:
+            orientation: 'vertical'
+            size_hint_x: 1
+            spacing: 20
+
+            Button:
+                size_hint_y: 8
+                id: load_button
+                disabled: False
+                background_color: hex('#FFFFFF00')
+                on_release: 
+                    root.sm.current = 'upper_loom'
+                    self.background_color = hex('#FFFFFF00')
+                on_press:
+                    self.background_color = hex('#FFFFFF00')
+                BoxLayout:
+                    padding: 0
+                    size: self.parent.size
+                    pos: self.parent.pos
+                    Image:
+                        id: image_select
+                        source: "./img/lobby_pro.png"
+                        center_x: self.parent.center_x
+                        center_y: self.parent.center_y
+                        size: self.parent.width, self.parent.height
+                        allow_stretch: True 
+            Label:
+                size_hint_y: 1
+                font_size: '25sp'
+                text: 'Upper Loom'
+                
+        BoxLayout:
+            orientation: 'vertical'
+            size_hint_x: 1
+            spacing: 20
+                                    
+            Button:
+                id: load_button
+                disabled: False
+                size_hint_y: 8
+                background_color: hex('#FFFFFF00')
+                on_release: 
+                    self.background_color = hex('#FFFFFF00')
+                    root.sm.current = 'rpi_test'
+                on_press:
+                    self.background_color = hex('#FFFFFF00')
+                BoxLayout:
+                    padding: 0
+                    size: self.parent.size
+                    pos: self.parent.pos
+                    Image:
+                        id: image_select
+                        source: "./img/lobby_pro.png"
+                        center_x: self.parent.center_x
+                        y: self.parent.y
+                        size: self.parent.width, self.parent.height
+                        allow_stretch: True 
+            Label:
+                size_hint_y: 1
+                font_size: '25sp'
+                text: 'RPi Test'
+
+<IconSet>
+
+    image_for_button:image_for_button
+    text_for_icon_set:text_for_icon_set
+
+    BoxLayout:
+        orientation: 'vertical'
+        spacing: 20
+        size: self.parent.size
+        pos: self.parent.pos
+                                
+        Button:
+            size_hint_y: 8
+            background_color: hex('#FFFFFF00')
+            on_press: root.button_pushed()
+            BoxLayout:
+                padding: 0
+                size: self.parent.size
+                pos: self.parent.pos
+                Image:
+                    id: image_for_button
+                    center_x: self.parent.center_x
+                    y: self.parent.y
+                    size: self.parent.width, self.parent.height
+                    allow_stretch: True 
+        Label:
+            id: text_for_icon_set
+            size_hint_y: 1
+            font_size: '25sp'
+    
+                        
                 
 """)
 
 
+class IconSet(Widget):
+
+    def __init__(self, **kwargs):
+        super(IconSet, self).__init__(**kwargs)
+        self.sm=kwargs['screen_manager']
+        self.loom=kwargs['selected_loom']
+        
+    def button_pushed(self):
+#         self.loom = self.text_for_icon_set.text
+        self.sm.get_screen('lobby').loom = self.text_for_icon_set.text
+        self.sm.current = 'intro_screen'
+        
+
 class LobbyScreen(Screen):
     
+    loom = None
     
     def __init__(self, **kwargs):
         super(LobbyScreen, self).__init__(**kwargs)
         self.sm=kwargs['screen_manager']
-
-
-    
         
+        # crawl folders in 'looms' dir, to make an icon set for each
+        loom_names = next(os.walk('./looms'))[1]
+        
+        for loom in loom_names:
+            icon_set = IconSet(screen_manager = self.sm, selected_loom = self.loom)
+            icon_set.text_for_icon_set.text = str(loom)
+            icon_set.image_for_button.source = './looms/' + loom + '/icon.png' 
+            self.grid.add_widget(icon_set)
