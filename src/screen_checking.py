@@ -25,7 +25,8 @@ Builder.load_string("""
         size: self.parent.size
         pos: self.parent.pos 
         background_normal: ''
-        background_color: hex('#0D47A1ff')
+        background_color: hex('#000000ff')
+        text: ''
 
 <PinPassInCircuit>:
 
@@ -33,7 +34,9 @@ Builder.load_string("""
         size: self.parent.size
         pos: self.parent.pos 
         background_normal: ''
-        background_color: hex('#0D47A1ff')
+        background_color: hex('#00ff00ff')
+        text: ''
+        
 
 <PinFailInCircuit>:
 
@@ -41,15 +44,20 @@ Builder.load_string("""
         size: self.parent.size
         pos: self.parent.pos 
         background_normal: ''
-        background_color: hex('#0D47A1ff')
+        background_color: hex('#ff0000ff')
+        text: ''
 
 <PinPassNonCircuit>:
 
-    Button:
+    Label:
         size: self.parent.size
         pos: self.parent.pos 
-        background_normal: ''
-        background_color: hex('#0D47A1ff')
+        canvas:
+            Color: 
+                rgba: hex('#00ff0044')
+            Rectangle: 
+                size: self.size
+                pos: self.pos
 
 <PinFailNonCircuit>:
 
@@ -57,7 +65,8 @@ Builder.load_string("""
         size: self.parent.size
         pos: self.parent.pos 
         background_normal: ''
-        background_color: hex('#0D47A1ff')
+        background_color: hex('#ff000088')
+        text: ''
 
       
 
@@ -67,17 +76,23 @@ Builder.load_string("""
     circuit_name:circuit_name
     
     BoxLayout:
-        
+
+        spacing: 10
+
         size: self.parent.size
         pos: self.parent.pos    
-    
-        Label:
+
+        Button:
             id: circuit_name
             size: self.parent.size
-            pos: self.parent.pos    
+            pos: self.parent.pos 
+            background_normal: ''
+            background_color: hex('#00ff0000')
+            text: ''    
             size_hint_x: 1
         
         BoxLayout:
+            spacing: 0
             id:pin_line
             size: self.parent.size
             pos: self.parent.pos    
@@ -136,12 +151,19 @@ class CircuitTest(Widget):
         self.pin_line.add_widget(pin)
 
 
+if sys.platform != "win32":
+    
+    import RPi.GPIO as GPIO           # import RPi.GPIO module  
+    GPIO.setmode(GPIO.BOARD)            # choose BCM (Broadcom chip pin number) or BOARD (GPIO pin number)
+
 class CheckingScreen(Screen):
+
     
     def __init__(self, **kwargs):
     
         super(CheckingScreen, self).__init__(**kwargs)
         self.sm=kwargs['screen_manager']
+
 
     def on_enter(self):
 
@@ -161,37 +183,72 @@ class CheckingScreen(Screen):
                 header.pin_line.add_widget(l)
         self.pin_matrix.add_widget(header)
 
-        # print the rest
-        i=2
-        while i<len(data_set):
+
+        # TEST EACH CIRCUIT
+        
+        i = 2 #row, data starts at row 3
+        
+        while i < len(data_set):
+
+            circuit_passed = True
+            
+            # print circuit name
             circuit = CircuitTest()
-            circuit.circuit_name.text = data_set[i][0]
-            j=1
-            while j<len(data_set[i]):
-                l = Label(text=data_set[i][j])
-                circuit.pin_line.add_widget(l)
+            circuit_name = data_set[i][0]
+            circuit.circuit_name.text = circuit_name
+            print circuit_name
+
+            # RPI PIN SETUP
+            # INPUTS: default all relevant pins to inputs, pulled high (high because 2 pins on the Pi have to be pulled high (3&5), so they determine the default for all)
+            
+            p = 1
+            while p < len(data_set[0]):
+                rpi_input_pin = data_set[0][p]
+                if sys.platform != "win32":
+                    GPIO.setup(rpi_input_pin, GPIO.IN, pull_up_down=GPIO.PUD_UP)   # set a port/pin as an output   
+                p += 1
+            
+            # OUTPUT: set the first pin marked as '1' as the output
+            output_index = data_set[i].index('1')
+            rpi_output_pin = data_set[0][output_index]
+            if sys.platform != "win32":
+                GPIO.setup(rpi_output_pin, GPIO.OUT, initial = 0)   # set a port/pin as an output   
+            
+            # COMPARE INPUTS WITH DATASET
+            j=1 #col, data starts at col 2
+            
+            while j<len(data_set[0]):
+                
+                rpi_pin = data_set[0][j]
+                
+                if j == output_index: # if it's the output pin, nothing to compare, just add pin flag
+                    circuit.pin_line.add_widget(PinOutput())
+                else:
+                    if sys.platform != "win32":
+                        if GPIO.input(rpi_pin) == 1 and data_set[i][j] == '': circuit.pin_line.add_widget(PinPassNonCircuit())
+                        if GPIO.input(rpi_pin) == 0 and data_set[i][j] == '1': circuit.pin_line.add_widget(PinPassInCircuit())
+                        if GPIO.input(rpi_pin) == 1 and data_set[i][j] == '1': 
+                            circuit.pin_line.add_widget(PinFailInCircuit())
+                            circuit_passed = False
+                        if GPIO.input(rpi_pin) == 0 and data_set[i][j] == '': 
+                            circuit.pin_line.add_widget(PinFailNonCircuit())
+                            circuit_passed = False
+                    else:
+                        if data_set[i][j] == '': circuit.pin_line.add_widget(PinPassNonCircuit())
+                        if data_set[i][j] == '1': circuit.pin_line.add_widget(PinPassInCircuit())
+
                 j+=1
+            
             i+=1
+
+            # Paint circuit label result
+            if circuit_passed: circuit.circuit_name.background_color = 0,1,0,0.5
+            else: circuit.circuit_name.background_color = 1,0,0,0.5
+            
+                
             self.pin_matrix.add_widget(circuit)
                 
         
-            
-            
-            
-# 
-#         i=0 
-#         while i < 10:
-#             circuit = CircuitTest()
-#             circuit.circuit_name.text = "Test " + str(i)
-#             p=0 
-#             while p < 30:
-#                 circuit.add_pin(0)
-#                 p += 1
-#         
-#             self.pin_matrix.add_widget(circuit)
-#             i += 1
-#         
-    
     def quit_to_lobby(self):
         self.sm.current = 'lobby'
         
