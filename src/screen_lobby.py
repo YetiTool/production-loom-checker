@@ -179,17 +179,16 @@ class IconSet(Widget):
     def __init__(self, **kwargs):
         super(IconSet, self).__init__(**kwargs)
         self.sm=kwargs['screen_manager']
-        self.loom=kwargs['selected_loom']
         
     def button_pushed(self):
-#         self.loom = self.text_for_icon_set.text
-        self.sm.get_screen('lobby').loom = self.text_for_icon_set.text
+#         self.loom_selected = self.text_for_icon_set.text
+        self.sm.get_screen('lobby').loom_selected = self.text_for_icon_set.text
         self.sm.current = 'intro_screen'
         
 
 class LobbyScreen(Screen):
     
-    loom = None
+    loom_selected = None
     
     def __init__(self, **kwargs):
         super(LobbyScreen, self).__init__(**kwargs)
@@ -199,7 +198,7 @@ class LobbyScreen(Screen):
         loom_names = next(os.walk('./looms'))[1]
         
         for loom in loom_names:
-            icon_set = IconSet(screen_manager = self.sm, selected_loom = self.loom)
+            icon_set = IconSet(screen_manager = self.sm)
             icon_set.text_for_icon_set.text = str(loom)
             icon_set.image_for_button.source = './looms/' + loom + '/icon.png' 
             self.grid.add_widget(icon_set)

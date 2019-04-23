@@ -11,6 +11,7 @@ from kivy.properties import ObjectProperty, ListProperty, NumericProperty, Strin
 from kivy.uix.widget import Widget
 from kivy.clock import Clock
 from kivy.uix.widget import Widget
+from kivy.graphics import Color, Rectangle
 
 import sys, os
 
@@ -18,16 +19,10 @@ import sys, os
 # Kivy UI builder:
 Builder.load_string("""
 
-<IntroScreen>:
+<ResultScreen>:
 
-    intro_image:intro_image
-    
-    canvas:
-        Color: 
-            rgba: hex('#0D47A1ff')
-        Rectangle: 
-            size: self.size
-            pos: self.pos
+    pass_fail_label:pass_fail_label
+    report_button:report_button
              
     BoxLayout:
         size: self.parent.size
@@ -38,10 +33,12 @@ Builder.load_string("""
         size_hint_y: None
         height: 400
             
-        Image:
-            id: intro_image
+        Label:
+            id: pass_fail_label
             size: self.parent.size
-            pos: self.parent.pos   
+            pos: self.parent.pos  
+            font_size: '150sp'
+            markup: True
 
         BoxLayout:
             orientation: 'horizontal'
@@ -55,6 +52,13 @@ Builder.load_string("""
                 on_press: root.sm.current = 'lobby'
     
             Button:
+                id:report_button
+                font_size: '30sp'
+                markup: True
+                text: 'Report'
+                on_press: root.sm.current = 'lobby'
+    
+            Button:
                 font_size: '30sp'
                 markup: True
                 text: 'Go'
@@ -64,14 +68,26 @@ Builder.load_string("""
 """)
 
 
-class IntroScreen(Screen):
+class ResultScreen(Screen):
 
+
+    is_pass =  True
     
     def __init__(self, **kwargs):
     
-        super(IntroScreen, self).__init__(**kwargs)
+        super(ResultScreen, self).__init__(**kwargs)
         self.sm=kwargs['screen_manager']
         
     def on_enter(self):
-        self.intro_image.source = './looms/' + self.sm.get_screen('lobby').loom_selected + '/intro_img.png' 
-        
+
+        if self.is_pass:
+            with self.canvas.before:
+                Color(0, 1, 0, 1)
+                Rectangle(pos=self.pos, size=self.size)
+            self.pass_fail_label.text='[color=000000]Pass :-)[/color]'
+
+        else:
+            with self.canvas.before:
+                Color(1, 0, 0, 1)
+                Rectangle(pos=self.pos, size=self.size)
+            self.pass_fail_label.text='[color=000000]Fail :-([/color]'

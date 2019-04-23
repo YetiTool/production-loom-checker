@@ -1,7 +1,7 @@
 '''
 Created on 16 Nov 2017
 @author: eD
-YetiTool's production console to check looms for SmartBench
+A production console to check looms/wire harnesses for correct pin assignment, continuity and dead shorts
 www.yetitool.com
 '''
 import time
@@ -26,9 +26,11 @@ import screen_upper_loom
 import rpi_test
 import screen_settings
 import screen_intro
+import screen_result
+import screen_checking
 
 
-class SkavaUI(App):
+class LoomChecker(App):
 
     def build(self):
 
@@ -42,6 +44,8 @@ class SkavaUI(App):
         rpi_test_screen = rpi_test.RpiTestScreen(name='rpi_test', screen_manager = sm)
         settings_screen = screen_settings.SettingsScreen(name='settings_screen', screen_manager = sm)
         intro_screen = screen_intro.IntroScreen(name='intro_screen', screen_manager = sm)
+        result_screen = screen_result.ResultScreen(name='result_screen', screen_manager = sm)
+        checking_screen = screen_checking.CheckingScreen(name='checking_screen', screen_manager = sm)
 
         # add the screens to screen manager
         sm.add_widget(lobby_screen)
@@ -49,6 +53,8 @@ class SkavaUI(App):
         sm.add_widget(rpi_test_screen)
         sm.add_widget(settings_screen)
         sm.add_widget(intro_screen)
+        sm.add_widget(result_screen)
+        sm.add_widget(checking_screen)
 
         # set screen to start on
         sm.current = 'lobby'
@@ -58,4 +64,4 @@ class SkavaUI(App):
 
 if __name__ == '__main__':
 
-    SkavaUI().run()
+    LoomChecker().run()
