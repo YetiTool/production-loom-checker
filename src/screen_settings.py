@@ -171,7 +171,7 @@ class NetworkSetup(Widget):
         self.sm=kwargs['screen_manager']
         self.refresh_ip_label_value()
 
-    def connectWifi(self):
+    def connectWifi(self): 
 
         # get network name and password from text entered (widget)
         self.netname = self.networkTextEntry.text
