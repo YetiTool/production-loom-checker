@@ -229,6 +229,7 @@ class CheckingScreen(Screen):
             while j<len(data_set[0]):
                 
                 rpi_pin = int(data_set[0][j])
+                print rpi_pin
                 
                 if j == output_index: # if it's the output pin, nothing to compare, just add pin flag
                     circuit.pin_line.add_widget(PinOutput())
