@@ -223,7 +223,7 @@ class CheckingScreen(Screen):
                     except:
                         self.error_reason = "Unable to assign RasPi pin " + str(self.rpi_input_pin) + " as input."
                         end_process = True
-                        self.sm.current = 'error'
+                        self.sm.current = 'error_screen'
                         break
                 
                 p += 1
