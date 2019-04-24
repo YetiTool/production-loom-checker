@@ -28,6 +28,7 @@ import screen_settings
 import screen_intro
 import screen_result
 import screen_checking
+import screen_error
 
 
 class LoomChecker(App):
@@ -46,6 +47,7 @@ class LoomChecker(App):
         intro_screen = screen_intro.IntroScreen(name='intro_screen', screen_manager = sm)
         result_screen = screen_result.ResultScreen(name='result_screen', screen_manager = sm)
         checking_screen = screen_checking.CheckingScreen(name='checking_screen', screen_manager = sm)
+        error_screen = screen_error.ErrorScreen(name='error_screen', screen_manager = sm)
 
         # add the screens to screen manager
         sm.add_widget(lobby_screen)
@@ -55,6 +57,7 @@ class LoomChecker(App):
         sm.add_widget(intro_screen)
         sm.add_widget(result_screen)
         sm.add_widget(checking_screen)
+        sm.add_widget(error_screen)
 
         # set screen to start on
         sm.current = 'lobby'

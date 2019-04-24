@@ -163,11 +163,13 @@ if sys.platform != "win32":
     import RPi.GPIO as GPIO           # import RPi.GPIO module  
     GPIO.setmode(GPIO.BOARD)            # choose BCM (Broadcom chip pin number) or BOARD (GPIO pin number)
 
+
 class CheckingScreen(Screen):
 
     
     def __init__(self, **kwargs):
-    
+
+        self.error_reason = 'Error reason'
         super(CheckingScreen, self).__init__(**kwargs)
         self.sm=kwargs['screen_manager']
 
@@ -200,8 +202,9 @@ class CheckingScreen(Screen):
         while i < len(data_set):
 
             circuit_passed = True
+            end_process = False
             
-            # print circuit name
+            # ESTABLISH CIRCUIT NAME
             circuit = CircuitTest(screen_manager = self.sm)
             circuit_name = data_set[i][0]
             circuit.circuit_name.text = circuit_name
@@ -212,13 +215,21 @@ class CheckingScreen(Screen):
             
             p = 1
             while p < len(data_set[0]):
-                rpi_input_pin = int(data_set[0][p])
-                print rpi_input_pin 
+                self.rpi_input_pin = int(data_set[0][p])
+                print self.rpi_input_pin 
                 if sys.platform != "win32":
-                    GPIO.setup(rpi_input_pin, GPIO.IN, pull_up_down=GPIO.PUD_UP)   # set a port/pin as an output   
-
+                    try:
+                        GPIO.setup(self.rpi_input_pin, GPIO.IN, pull_up_down=GPIO.PUD_UP)   # set a port/pin as an output   
+                    except:
+                        self.error_reason = "Unable to assign RasPi pin " + str(self.rpi_input_pin) + " as input."
+                        end_process = True
+                        self.sm.current = 'error'
+                        break
                 
                 p += 1
+
+            if end_process:
+                break
             
             # OUTPUT: set the first pin marked as '1' as the output
             output_index = data_set[i].index('1')
