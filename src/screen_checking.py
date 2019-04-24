@@ -230,7 +230,7 @@ class CheckingScreen(Screen):
 
             if end_process:
                 break
-            
+             
             # OUTPUT: set the first pin marked as '1' as the output
             output_index = data_set[i].index('1')
             rpi_output_pin = int(data_set[0][output_index])
