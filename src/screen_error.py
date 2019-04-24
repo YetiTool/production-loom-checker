@@ -50,13 +50,13 @@ Builder.load_string("""
             id: error_reason
             size: self.parent.size
             pos: self.parent.pos  
-            font_size: '30sp'
+            font_size: '20sp'
             markup: True
             text: 'Reason'
             size_hint_y: 1
             
         Button:
-            font_size: '30sp'
+            font_size: '20sp'
             markup: True
             text: 'Quit'
             on_press: root.sm.current = 'lobby'
