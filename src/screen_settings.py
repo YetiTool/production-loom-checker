@@ -39,7 +39,6 @@ Builder.load_string("""
     networkTextEntry:networkTextEntry
     passwordTextEntry:passwordTextEntry
     ipLabel:ipLabel
-    netNameLabel:netNameLabel
     countryTextEntry:countryTextEntry
 
     BoxLayout:
@@ -83,9 +82,6 @@ Builder.load_string("""
         Label:
             id: ipLabel
             text: 'IP address info here'
-        Label:
-            id: netNameLabel
-            text: 'IP address info here'
         Button:
             text: 'Connect...'
             on_release: root.connectWifi()
@@ -126,7 +122,6 @@ Builder.load_string("""
             text: 'SW VER'
             font_size: 18
             color: 0,0,0,1
-            id: sw_branch_label
             id: sw_version_label
 
 """)
@@ -174,6 +169,7 @@ class NetworkSetup(Widget):
     
         super(NetworkSetup, self).__init__(**kwargs)
         self.sm=kwargs['screen_manager']
+        self.refresh_ip_label_value()
 
     def connectWifi(self):
 
@@ -200,8 +196,30 @@ class NetworkSetup(Widget):
         os.system('echo "country="' + self.country + '| sudo tee --append /etc/wpa_supplicant/wpa_supplicant-wlan0.conf')
         
         os.system('sudo reboot')
-        
 
+    def refresh_ip_label_value(self):
+
+        ip_address = ''
+
+        if sys.platform == "win32":
+            try:
+                hostname=socket.gethostname()
+                IPAddr=socket.gethostbyname(hostname)
+                ip_address = str(IPAddr)
+            except:
+                ip_address = 'No IP'
+        else:
+            try:
+                f = os.popen('hostname -I')
+                first_info = f.read().strip().split(' ')[0]
+                if len(first_info.split('.')) == 4:
+                    ip_address = first_info
+                else:
+                    ip_address = 'No IP'
+            except:
+                ip_address = 'No IP'
+
+        self.ipLabel.text = ip_address        
 
 class SettingsScreen(Screen):
    
@@ -212,3 +230,6 @@ class SettingsScreen(Screen):
         
         self.network_container.add_widget(NetworkSetup(screen_manager=self.sm))
         self.developer_container.add_widget(DevOptions(screen_manager=self.sm))
+
+
+
