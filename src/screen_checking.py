@@ -221,7 +221,7 @@ class CheckingScreen(Screen):
                     try:
                         GPIO.setup(self.rpi_input_pin, GPIO.IN, pull_up_down=GPIO.PUD_UP)   # set a port/pin as an output   
                     except:
-                        self.error_reason = "Unable to assign RasPi pin " + str(self.rpi_input_pin) + " as input."
+                        self.error_reason = "Logic matrix: Unable to assign RasPi pin " + str(self.rpi_input_pin) + " as input."
                         end_process = True
                         self.sm.current = 'error_screen'
                         break
@@ -232,7 +232,13 @@ class CheckingScreen(Screen):
                 break
              
             # OUTPUT: set the first pin marked as '1' as the output
-            output_index = data_set[i].index('1')
+            try:
+                output_index = data_set[i].index('1')
+            except:
+                self.error_reason = "Logic matrix: A `1` must be assigned to `" + circuit_name + "` circuit."
+                end_process = True
+                self.sm.current = 'error_screen'
+                break
             rpi_output_pin = int(data_set[0][output_index])
             if sys.platform != "win32":
                 GPIO.setup(rpi_output_pin, GPIO.OUT, initial = 0)   # set a port/pin as an output   
