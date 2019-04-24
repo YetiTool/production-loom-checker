@@ -87,9 +87,10 @@ Builder.load_string("""
             size: self.parent.size
             pos: self.parent.pos 
             background_normal: ''
-            background_color: hex('#00ff0000')
-            text: ''    
+            background_color: hex('#00000044')
+            text: 'Quit'    
             size_hint_x: 1
+            on_press: root.quit_to_lobby()
         
         BoxLayout:
             spacing: 0
@@ -145,11 +146,17 @@ class PinFailNonCircuit(Widget):
 
 class CircuitTest(Widget):
     
+    def __init__(self, **kwargs):
+        super(CircuitTest, self).__init__(**kwargs)
+        self.sm=kwargs['screen_manager']    
+        
     def add_pin(self, digital_status):
         pin = PinIndicator()
         pin.set_pin_status(digital_status)
         self.pin_line.add_widget(pin)
-
+        
+    def quit_to_lobby(self):
+        self.sm.current = 'lobby'
 
 if sys.platform != "win32":
     
@@ -167,6 +174,8 @@ class CheckingScreen(Screen):
 
     def on_enter(self):
 
+        self.pin_matrix.clear_widgets()
+
         # extract data_set        
         data_source_path = './looms/' + self.sm.get_screen('lobby').loom_selected + '/logic_matrix.csv'
         data_set = []
@@ -176,7 +185,7 @@ class CheckingScreen(Screen):
             data_set.append(line_of_data)
 
         # print header row
-        header = CircuitTest()
+        header = CircuitTest(screen_manager = self.sm)
         for col in data_set[1]:
             if col != "":
                 l = Label(text=col)
@@ -193,7 +202,7 @@ class CheckingScreen(Screen):
             circuit_passed = True
             
             # print circuit name
-            circuit = CircuitTest()
+            circuit = CircuitTest(screen_manager = self.sm)
             circuit_name = data_set[i][0]
             circuit.circuit_name.text = circuit_name
             print circuit_name
@@ -203,14 +212,14 @@ class CheckingScreen(Screen):
             
             p = 1
             while p < len(data_set[0]):
-                rpi_input_pin = data_set[0][p]
+                rpi_input_pin = int(data_set[0][p])
                 if sys.platform != "win32":
                     GPIO.setup(rpi_input_pin, GPIO.IN, pull_up_down=GPIO.PUD_UP)   # set a port/pin as an output   
                 p += 1
             
             # OUTPUT: set the first pin marked as '1' as the output
             output_index = data_set[i].index('1')
-            rpi_output_pin = data_set[0][output_index]
+            rpi_output_pin = int(data_set[0][output_index])
             if sys.platform != "win32":
                 GPIO.setup(rpi_output_pin, GPIO.OUT, initial = 0)   # set a port/pin as an output   
             
@@ -219,7 +228,7 @@ class CheckingScreen(Screen):
             
             while j<len(data_set[0]):
                 
-                rpi_pin = data_set[0][j]
+                rpi_pin = int(data_set[0][j])
                 
                 if j == output_index: # if it's the output pin, nothing to compare, just add pin flag
                     circuit.pin_line.add_widget(PinOutput())
@@ -244,7 +253,6 @@ class CheckingScreen(Screen):
             # Paint circuit label result
             if circuit_passed: circuit.circuit_name.background_color = 0,1,0,0.5
             else: circuit.circuit_name.background_color = 1,0,0,0.5
-            
                 
             self.pin_matrix.add_widget(circuit)
                 
