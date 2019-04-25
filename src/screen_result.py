@@ -29,9 +29,7 @@ Builder.load_string("""
         pos: self.parent.pos   
         
         orientation: 'vertical'
-        spacing: 0
-        size_hint_y: None
-        height: 400
+        spacing: 10
             
         Label:
             id: pass_fail_label
@@ -39,11 +37,12 @@ Builder.load_string("""
             pos: self.parent.pos  
             font_size: '150sp'
             markup: True
+            text: "[color=000000]Pass :-)[/color]"
+            size_hint_y: 5
 
         BoxLayout:
             orientation: 'horizontal'
-            size_hint_y: None
-            height: 80
+            size_hint_y: 1
     
             Button:
                 font_size: '30sp'
@@ -61,7 +60,7 @@ Builder.load_string("""
             Button:
                 font_size: '30sp'
                 markup: True
-                text: 'Go'
+                text: 'GO AGAIN!'
                 on_press: root.sm.current = 'checking_screen'
         
 
@@ -84,10 +83,12 @@ class ResultScreen(Screen):
             with self.canvas.before:
                 Color(0, 1, 0, 1)
                 Rectangle(pos=self.pos, size=self.size)
+            self.pass_fail_label.font_size='150sp'
             self.pass_fail_label.text='[color=000000]Pass :-)[/color]'
 
         else:
             with self.canvas.before:
                 Color(1, 0, 0, 1)
                 Rectangle(pos=self.pos, size=self.size)
-            self.pass_fail_label.text='[color=000000]Fail :-([/color]'
+            self.pass_fail_label.font_size='30sp'
+            self.pass_fail_label.text='[color=000000]Uh-oh!\n' + '\n'.join(self.sm.get_screen('checking_screen').fail_reasons) + '[/color]'

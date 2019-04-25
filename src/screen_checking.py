@@ -169,14 +169,16 @@ class CheckingScreen(Screen):
     
     def __init__(self, **kwargs):
 
-        self.error_reason = 'Error reason'
+        self.error_reason = 'Error reason' # Error is for broken program, not loom fail
         super(CheckingScreen, self).__init__(**kwargs)
         self.sm=kwargs['screen_manager']
+        self.fail_reasons = [] # Error is for broken program, not loom fail
 
 
     def on_enter(self):
 
         self.pin_matrix.clear_widgets()
+        self.fail_reasons = [] # Error is for broken program, not loom fail
 
         # extract data_set        
         data_source_path = './looms/' + self.sm.get_screen('lobby').loom_selected + '/logic_matrix.csv'
@@ -256,11 +258,17 @@ class CheckingScreen(Screen):
                     if sys.platform != "win32":
                         if GPIO.input(rpi_pin) == 1 and data_set[i][j] == '': circuit.pin_line.add_widget(PinPassNonCircuit())
                         if GPIO.input(rpi_pin) == 0 and data_set[i][j] == '1': circuit.pin_line.add_widget(PinPassInCircuit())
-                        if GPIO.input(rpi_pin) == 1 and data_set[i][j] == '1': 
+                        if GPIO.input(rpi_pin) == 1 and data_set[i][j] == '1': # Signal was not received on expected pin
                             circuit.pin_line.add_widget(PinFailInCircuit())
+                            fail_reason = (circuit_name + ": Signal from " + data_set[1][output_index] +
+                                " not received at expected " + data_set[1][j])
+                            fail_reasons.append[fail_reason]
                             circuit_passed = False
-                        if GPIO.input(rpi_pin) == 0 and data_set[i][j] == '': 
+                        if GPIO.input(rpi_pin) == 0 and data_set[i][j] == '': # Signal was received on unexpected pin
                             circuit.pin_line.add_widget(PinFailNonCircuit())
+                            fail_reason = (circuit_name + ": Signal from " + data_set[1][output_index] +
+                                " was received unexpectedly from pin " + data_set[1][j])
+                            fail_reasons.append[fail_reason]
                             circuit_passed = False
                     else:
                         if data_set[i][j] == '': circuit.pin_line.add_widget(PinPassNonCircuit())
