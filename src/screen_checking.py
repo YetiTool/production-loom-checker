@@ -262,13 +262,13 @@ class CheckingScreen(Screen):
                             circuit.pin_line.add_widget(PinFailInCircuit())
                             fail_reason = (circuit_name + ": Signal from " + data_set[1][output_index] +
                                 " not received at expected " + data_set[1][j])
-                            fail_reasons.append[fail_reason]
+                            self.fail_reasons.append[fail_reason]
                             circuit_passed = False
                         if GPIO.input(rpi_pin) == 0 and data_set[i][j] == '': # Signal was received on unexpected pin
                             circuit.pin_line.add_widget(PinFailNonCircuit())
                             fail_reason = (circuit_name + ": Signal from " + data_set[1][output_index] +
                                 " was received unexpectedly from pin " + data_set[1][j])
-                            fail_reasons.append[fail_reason]
+                            self.fail_reasons.append[fail_reason]
                             circuit_passed = False
                     else:
                         if data_set[i][j] == '': circuit.pin_line.add_widget(PinPassNonCircuit())

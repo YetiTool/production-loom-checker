@@ -61,7 +61,6 @@ class LoomChecker(App):
 
         # set screen to start on
         sm.current = 'lobby'
-        sm.current = 'result_screen'
         
         return sm
 
