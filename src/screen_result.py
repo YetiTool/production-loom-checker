@@ -79,7 +79,7 @@ class ResultScreen(Screen):
         
     def on_enter(self):
 
-        if self.is_pass:
+        if self.sm.get_screen('checking_screen').fail_reasons == []:
             with self.canvas.before:
                 Color(0, 1, 0, 1)
                 Rectangle(pos=self.pos, size=self.size)

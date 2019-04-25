@@ -199,10 +199,12 @@ class CheckingScreen(Screen):
 
         # TEST EACH CIRCUIT
         
+        
         i = 2 #row, data starts at row 3
         
         while i < len(data_set):
 
+            
             circuit_passed = True
             end_process = False
             
@@ -256,20 +258,26 @@ class CheckingScreen(Screen):
                     circuit.pin_line.add_widget(PinOutput())
                 else:
                     if sys.platform != "win32":
+                        
+                        # PASS cases
                         if GPIO.input(rpi_pin) == 1 and data_set[i][j] == '': circuit.pin_line.add_widget(PinPassNonCircuit())
                         if GPIO.input(rpi_pin) == 0 and data_set[i][j] == '1': circuit.pin_line.add_widget(PinPassInCircuit())
+                        
+                        # FAIL cases
                         if GPIO.input(rpi_pin) == 1 and data_set[i][j] == '1': # Signal was not received on expected pin
                             circuit.pin_line.add_widget(PinFailInCircuit())
                             fail_reason = (circuit_name + ": Signal from " + data_set[1][output_index] +
                                 " not received at expected " + data_set[1][j])
                             self.fail_reasons.append(fail_reason)
                             circuit_passed = False
+
                         if GPIO.input(rpi_pin) == 0 and data_set[i][j] == '': # Signal was received on unexpected pin
                             circuit.pin_line.add_widget(PinFailNonCircuit())
                             fail_reason = (circuit_name + ": Signal from " + data_set[1][output_index] +
                                 " was received unexpectedly from pin " + data_set[1][j])
                             self.fail_reasons.append(fail_reason)
                             circuit_passed = False
+                    
                     else:
                         if data_set[i][j] == '': circuit.pin_line.add_widget(PinPassNonCircuit())
                         if data_set[i][j] == '1': circuit.pin_line.add_widget(PinPassInCircuit())
@@ -283,7 +291,12 @@ class CheckingScreen(Screen):
             else: circuit.circuit_name.background_color = 1,0,0,0.5
                 
             self.pin_matrix.add_widget(circuit)
+        
+        Clock.schedule_once(self.quit_to_result, 2)
                 
+    def quit_to_result(self, dt):
+        self.sm.current = 'result_screen'
+
         
     def quit_to_lobby(self):
         self.sm.current = 'lobby'
