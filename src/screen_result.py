@@ -22,6 +22,7 @@ Builder.load_string("""
 
 <ResultScreen>:
 
+    pass_fail_label:pass_fail_label
     report_button:report_button
     consoleScrollText:consoleScrollText
              
@@ -31,7 +32,14 @@ Builder.load_string("""
         
         orientation: 'vertical'
         padding: 10
-        spacing: 10
+        spacing: 20
+        
+        Label:
+            id: pass_fail_label
+            size_hint_y: 1
+            font_size: '50sp'
+            markup: True
+            text:'[color=000000][b]Pass :-)[/b][/color]'
             
         ScrollableLabel:
             size_hint_y: 5                       
@@ -69,7 +77,7 @@ Builder.load_string("""
         text_size: self.width, None
         max_lines: 60 
         markup: True
-        font_size: root.font_size
+        font_size: '25sp'
         text: root.text
        
 
@@ -78,7 +86,6 @@ Builder.load_string("""
 class ScrollableLabel(ScrollView):
 
     text = StringProperty('')
-    font_size = NumericProperty('')
 
 class ResultScreen(Screen):
 
@@ -96,19 +103,21 @@ class ResultScreen(Screen):
             with self.canvas.before:
                 Color(0, 1, 0, 1)
                 Rectangle(pos=self.pos, size=self.size)
-            self.update_display_text("Pass :-)", '150sp')
+            self.pass_fail_label.text = '[color=000000][b]Pass :-)[/b][/color]'
+            self.update_failure_description_label_text("")
 
 
         else:
             with self.canvas.before:
                 Color(1, 0, 0, 1)
                 Rectangle(pos=self.pos, size=self.size)
-            self.pass_fail_label.font_size='20sp'
-            failure_description='[color=000000]Uh-oh!! \n\n' + '\n'.join(self.sm.get_screen('checking_screen').fail_reasons) + '[/color]'
-            self.update_display_text(failure_description, '25sp')
+            self.pass_fail_label.text = '[color=000000][b]Uh oh!![/b][/color]'
+            failure_description='Here\'s what\'s wrong: \n\n' + '\n'.join(self.sm.get_screen('checking_screen').fail_reasons)
+            self.update_failure_description_label_text(failure_description)
     
 
-    def update_display_text(self, failure_description, font_size):   
+    def update_failure_description_label_text(self, failure_description):   
         
-        self.consoleScrollText.font_size = font_size
         self.consoleScrollText.text = '[color=000000]' + failure_description + '[/color]'
+        
+        
