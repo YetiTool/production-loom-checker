@@ -221,7 +221,6 @@ class CheckingScreen(Screen):
             p = 1
             while p < len(self.data_set[0]):
                 self.rpi_input_pin = int(self.data_set[0][p])
-                print self.rpi_input_pin 
                 if sys.platform != "win32":
                     try:
                         GPIO.setup(self.rpi_input_pin, GPIO.IN, pull_up_down=GPIO.PUD_UP)   # set a port/pin as an output   
@@ -287,7 +286,7 @@ class CheckingScreen(Screen):
                 
             self.pin_matrix.add_widget(circuit)
             
-            Clock.schedule_once(self.test_next_circuit, 0.2)
+            Clock.schedule_once(self.test_next_circuit, 0)
         
         else:
             
