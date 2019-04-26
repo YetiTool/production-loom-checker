@@ -180,17 +180,17 @@ class CheckingScreen(Screen):
         self.pin_matrix.clear_widgets()
         self.fail_reasons = [] # Error is for broken program, not loom fail
 
-        # extract data_set        
+        # extract self.data_set        
         data_source_path = './looms/' + self.sm.get_screen('lobby').loom_selected + '/logic_matrix.csv'
-        data_set = []
+        self.data_set = []
         f = open(data_source_path, "r")
         for line in f:
             line_of_data = line.rstrip().split(',')
-            data_set.append(line_of_data)
+            self.data_set.append(line_of_data)
 
         # print header row
         header = CircuitTest(screen_manager = self.sm)
-        for col in data_set[1]:
+        for col in self.data_set[1]:
             if col != "":
                 l = Label(text=col)
                 header.pin_line.add_widget(l)
@@ -199,18 +199,19 @@ class CheckingScreen(Screen):
 
         # TEST EACH CIRCUIT
         
+        self.data_row = 2 #row, data starts at row 3
+        Clock.schedule_once(self.test_next_circuit, 0)
+       
+    
+    def test_next_circuit(self, dt):
         
-        i = 2 #row, data starts at row 3
-        
-        while i < len(data_set):
-
+        if self.data_row < len(self.data_set):
             
             circuit_passed = True
-            end_process = False
             
             # ESTABLISH CIRCUIT NAME
             circuit = CircuitTest(screen_manager = self.sm)
-            circuit_name = data_set[i][0]
+            circuit_name = self.data_set[self.data_row][0]
             circuit.circuit_name.text = circuit_name
             print circuit_name
 
@@ -218,41 +219,35 @@ class CheckingScreen(Screen):
             # INPUTS: default all relevant pins to inputs, pulled high (high because 2 pins on the Pi have to be pulled high (3&5), so they determine the default for all)
             
             p = 1
-            while p < len(data_set[0]):
-                self.rpi_input_pin = int(data_set[0][p])
+            while p < len(self.data_set[0]):
+                self.rpi_input_pin = int(self.data_set[0][p])
                 print self.rpi_input_pin 
                 if sys.platform != "win32":
                     try:
                         GPIO.setup(self.rpi_input_pin, GPIO.IN, pull_up_down=GPIO.PUD_UP)   # set a port/pin as an output   
                     except:
                         self.error_reason = "Logic matrix: Unable to assign RasPi pin " + str(self.rpi_input_pin) + " as input."
-                        end_process = True
                         self.sm.current = 'error_screen'
-                        break
                 
                 p += 1
 
-            if end_process:
-                break
              
             # OUTPUT: set the first pin marked as '1' as the output
             try:
-                output_index = data_set[i].index('1')
+                output_index = self.data_set[self.data_row].index('1')
             except:
                 self.error_reason = "Logic matrix: A `1` must be assigned to `" + circuit_name + "` circuit."
-                end_process = True
                 self.sm.current = 'error_screen'
-                break
-            rpi_output_pin = int(data_set[0][output_index])
+            rpi_output_pin = int(self.data_set[0][output_index])
             if sys.platform != "win32":
                 GPIO.setup(rpi_output_pin, GPIO.OUT, initial = 0)   # set a port/pin as an output   
             
             # COMPARE INPUTS WITH DATASET
             j=1 #col, data starts at col 2
             
-            while j<len(data_set[0]):
+            while j<len(self.data_set[0]):
                 
-                rpi_pin = int(data_set[0][j])
+                rpi_pin = int(self.data_set[0][j])
                 
                 if j == output_index: # if it's the output pin, nothing to compare, just add pin flag
                     circuit.pin_line.add_widget(PinOutput())
@@ -260,39 +255,43 @@ class CheckingScreen(Screen):
                     if sys.platform != "win32":
                         
                         # PASS cases
-                        if GPIO.input(rpi_pin) == 1 and data_set[i][j] == '': circuit.pin_line.add_widget(PinPassNonCircuit())
-                        if GPIO.input(rpi_pin) == 0 and data_set[i][j] == '1': circuit.pin_line.add_widget(PinPassInCircuit())
+                        if GPIO.input(rpi_pin) == 1 and self.data_set[self.data_row][j] == '': circuit.pin_line.add_widget(PinPassNonCircuit())
+                        if GPIO.input(rpi_pin) == 0 and self.data_set[self.data_row][j] == '1': circuit.pin_line.add_widget(PinPassInCircuit())
                         
                         # FAIL cases
-                        if GPIO.input(rpi_pin) == 1 and data_set[i][j] == '1': # Signal was not received on expected pin
+                        if GPIO.input(rpi_pin) == 1 and self.data_set[self.data_row][j] == '1': # Signal was not received on expected pin
                             circuit.pin_line.add_widget(PinFailInCircuit())
-                            fail_reason = (circuit_name + " break: " + data_set[1][output_index] +
-                                " isn't connected to " + data_set[1][j])
+                            fail_reason = (circuit_name + " break: " + self.data_set[1][output_index] +
+                                " isn't connected to " + self.data_set[1][j])
                             self.fail_reasons.append(fail_reason)
                             circuit_passed = False
 
-                        if GPIO.input(rpi_pin) == 0 and data_set[i][j] == '': # Signal was received on unexpected pin
+                        if GPIO.input(rpi_pin) == 0 and self.data_set[self.data_row][j] == '': # Signal was received on unexpected pin
                             circuit.pin_line.add_widget(PinFailNonCircuit())
-                            fail_reason = (circuit_name + " short: " + data_set[1][output_index] +
-                                " is shorting to " + data_set[1][j])
+                            fail_reason = (circuit_name + " short: " + self.data_set[1][output_index] +
+                                " is shorting to " + self.data_set[1][j])
                             self.fail_reasons.append(fail_reason)
                             circuit_passed = False
                     
                     else:
-                        if data_set[i][j] == '': circuit.pin_line.add_widget(PinPassNonCircuit())
-                        if data_set[i][j] == '1': circuit.pin_line.add_widget(PinPassInCircuit())
+                        if self.data_set[self.data_row][j] == '': circuit.pin_line.add_widget(PinPassNonCircuit())
+                        if self.data_set[self.data_row][j] == '1': circuit.pin_line.add_widget(PinPassInCircuit())
 
                 j+=1
             
-            i+=1
+            self.data_row+=1
 
             # Paint circuit label result
             if circuit_passed: circuit.circuit_name.background_color = 0,1,0,0.5
             else: circuit.circuit_name.background_color = 1,0,0,0.5
                 
             self.pin_matrix.add_widget(circuit)
+            
+            Clock.schedule_once(self.test_next_circuit, 0.2)
         
-        Clock.schedule_once(self.quit_to_result, 2)
+        else:
+            
+            Clock.schedule_once(self.quit_to_result, 1)
                 
     def quit_to_result(self, dt):
         self.sm.current = 'result_screen'
