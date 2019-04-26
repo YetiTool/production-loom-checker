@@ -78,7 +78,7 @@ Builder.load_string("""
 class ScrollableLabel(ScrollView):
 
     text = StringProperty('')
-    font_size = StringProperty('')
+    font_size = NumericProperty('')
 
 class ResultScreen(Screen):
 
