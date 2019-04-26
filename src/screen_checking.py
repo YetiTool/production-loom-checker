@@ -220,9 +220,9 @@ class CheckingScreen(Screen):
             
             p = 1
             while p < len(self.data_set[0]):
-                self.rpi_input_pin = int(self.data_set[0][p])
                 if sys.platform != "win32":
                     try:
+                        self.rpi_input_pin = int(self.data_set[0][p])
                         GPIO.setup(self.rpi_input_pin, GPIO.IN, pull_up_down=GPIO.PUD_UP)   # set a port/pin as an output   
                     except:
                         self.error_reason = "Logic matrix: Unable to assign RasPi pin " + str(self.rpi_input_pin) + " as input."
