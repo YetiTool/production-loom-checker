@@ -74,70 +74,41 @@ Builder.load_string("""
                         allow_stretch: True 
             Label:
                 size_hint_y: 1
-                font_size: '25sp'
+                font_size: '15sp'
                 text: 'Settings'
 
-        BoxLayout:
-            orientation: 'vertical'
-            size_hint_x: 1
-            spacing: 20
 
-            Button:
-                size_hint_y: 8
-                id: load_button
-                disabled: False
-                background_color: hex('#FFFFFF00')
-                on_release: 
-                    root.sm.current = 'upper_loom'
-                    self.background_color = hex('#FFFFFF00')
-                on_press:
-                    self.background_color = hex('#FFFFFF00')
-                BoxLayout:
-                    padding: 0
-                    size: self.parent.size
-                    pos: self.parent.pos
-                    Image:
-                        id: image_select
-                        source: "./img/lobby_pro.png"
-                        center_x: self.parent.center_x
-                        center_y: self.parent.center_y
-                        size: self.parent.width, self.parent.height
-                        allow_stretch: True 
-            Label:
-                size_hint_y: 1
-                font_size: '25sp'
-                text: 'Upper Loom'
                 
-        BoxLayout:
-            orientation: 'vertical'
-            size_hint_x: 1
-            spacing: 20
-                                    
-            Button:
-                id: load_button
-                disabled: False
-                size_hint_y: 8
-                background_color: hex('#FFFFFF00')
-                on_release: 
-                    self.background_color = hex('#FFFFFF00')
-                    root.sm.current = 'rpi_test'
-                on_press:
-                    self.background_color = hex('#FFFFFF00')
-                BoxLayout:
-                    padding: 0
-                    size: self.parent.size
-                    pos: self.parent.pos
-                    Image:
-                        id: image_select
-                        source: "./img/lobby_pro.png"
-                        center_x: self.parent.center_x
-                        y: self.parent.y
-                        size: self.parent.width, self.parent.height
-                        allow_stretch: True 
-            Label:
-                size_hint_y: 1
-                font_size: '25sp'
-                text: 'RPi Test'
+#         BoxLayout:
+#             orientation: 'vertical'
+#             size_hint_x: 1
+#             spacing: 20
+#                                     
+#             Button:
+#                 id: load_button
+#                 disabled: False
+#                 size_hint_y: 8
+#                 background_color: hex('#FFFFFF00')
+#                 on_release: 
+#                     self.background_color = hex('#FFFFFF00')
+#                     root.sm.current = 'rpi_test'
+#                 on_press:
+#                     self.background_color = hex('#FFFFFF00')
+#                 BoxLayout:
+#                     padding: 0
+#                     size: self.parent.size
+#                     pos: self.parent.pos
+#                     Image:
+#                         id: image_select
+#                         source: "./img/lobby_pro.png"
+#                         center_x: self.parent.center_x
+#                         y: self.parent.y
+#                         size: self.parent.width, self.parent.height
+#                         allow_stretch: True 
+#             Label:
+#                 size_hint_y: 1
+#                 font_size: '25sp'
+#                 text: 'RPi Test'
 
 <IconSet>
 
@@ -167,7 +138,7 @@ Builder.load_string("""
         Label:
             id: text_for_icon_set
             size_hint_y: 1
-            font_size: '25sp'
+            font_size: '15sp'
     
                         
                 

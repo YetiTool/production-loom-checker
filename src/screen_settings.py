@@ -27,12 +27,20 @@ Builder.load_string("""
         orientation: 'horizontal'
 
         AccordionItem:
-            title: 'Network'
-            id: network_container
+            title: 'About'
+            Image:
+                size: self.parent.size
+                pos: self.parent.pos   
+                source: './img/team.png' 
 
         AccordionItem:
             title: 'Developer'
             id: developer_container
+
+        AccordionItem:
+            title: 'Network'
+            id: network_container
+
 
 <NetworkSetup>:
 
