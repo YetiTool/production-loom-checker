@@ -40,6 +40,7 @@ Builder.load_string("""
                             
     GridLayout:
 
+        orientation: 'horizontal'
         id: grid
         rows: 2
         padding: 30
@@ -78,37 +79,6 @@ Builder.load_string("""
                 text: 'Settings'
 
 
-                
-#         BoxLayout:
-#             orientation: 'vertical'
-#             size_hint_x: 1
-#             spacing: 20
-#                                     
-#             Button:
-#                 id: load_button
-#                 disabled: False
-#                 size_hint_y: 8
-#                 background_color: hex('#FFFFFF00')
-#                 on_release: 
-#                     self.background_color = hex('#FFFFFF00')
-#                     root.sm.current = 'rpi_test'
-#                 on_press:
-#                     self.background_color = hex('#FFFFFF00')
-#                 BoxLayout:
-#                     padding: 0
-#                     size: self.parent.size
-#                     pos: self.parent.pos
-#                     Image:
-#                         id: image_select
-#                         source: "./img/lobby_pro.png"
-#                         center_x: self.parent.center_x
-#                         y: self.parent.y
-#                         size: self.parent.width, self.parent.height
-#                         allow_stretch: True 
-#             Label:
-#                 size_hint_y: 1
-#                 font_size: '25sp'
-#                 text: 'RPi Test'
 
 <IconSet>
 
@@ -167,6 +137,7 @@ class LobbyScreen(Screen):
         
         # crawl folders in 'looms' dir, to make an icon set for each
         loom_names = next(os.walk('./looms'))[1]
+        loom_names.sort()
         
         for loom in loom_names:
             icon_set = IconSet(screen_manager = self.sm)
