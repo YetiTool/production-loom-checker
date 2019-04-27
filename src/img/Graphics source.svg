@@ -1,0 +1,1440 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   sodipodi:docname="Loom checker graphics.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.24748737"
+     inkscape:cx="1612.7937"
+     inkscape:cy="24.620844"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="2152"
+     inkscape:window-y="149"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="opacity:1;fill:#0d47a1;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.79999995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="rect4839"
+       width="211.66666"
+       height="127"
+       x="-15.686011"
+       y="91.380943"
+       ry="0" />
+    <rect
+       style="opacity:1;fill:#ff8a65;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.79999995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="rect4747"
+       width="26.458334"
+       height="26.458334"
+       x="27.616482"
+       y="112.92552"
+       ry="4.2049851" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:5.44068909px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458335"
+       x="30.356117"
+       y="119.91571"
+       id="text4751"><tspan
+         sodipodi:role="line"
+         x="30.356117"
+         y="119.91571"
+         style="stroke-width:0.26458335"
+         id="tspan4753">UPPER</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:19.35389709px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458329"
+       x="35.298416"
+       y="136.46846"
+       id="text4759"><tspan
+         sodipodi:role="line"
+         id="tspan4757"
+         x="35.298416"
+         y="136.46846"
+         style="stroke-width:0.26458329">1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:7.05555534px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="72.363228"
+       y="135.97011"
+       id="text4763"><tspan
+         sodipodi:role="line"
+         id="tspan4761"
+         x="72.363228"
+         y="142.29597"
+         style="stroke-width:0.26458332" /></text>
+    <rect
+       ry="4.2049851"
+       y="112.92552"
+       x="63.52422"
+       height="26.458334"
+       width="26.458334"
+       id="rect4819"
+       style="opacity:1;fill:#ffab91;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.79999995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+    <text
+       id="text4823"
+       y="119.91571"
+       x="66.263855"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:5.44068909px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458335"
+       xml:space="preserve"><tspan
+         id="tspan4821"
+         style="stroke-width:0.26458335"
+         y="119.91571"
+         x="66.263855"
+         sodipodi:role="line">UPPER</tspan></text>
+    <text
+       id="text4827"
+       y="136.46846"
+       x="71.206154"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:19.35389709px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458329"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.26458329"
+         y="136.46846"
+         x="71.206154"
+         id="tspan4825"
+         sodipodi:role="line">2</tspan></text>
+    <rect
+       style="opacity:1;fill:#ffccbc;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.79999995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="rect4829"
+       width="26.458334"
+       height="26.458334"
+       x="98.86499"
+       y="112.92552"
+       ry="4.2049851" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:5.44068909px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458335"
+       x="101.60463"
+       y="119.91571"
+       id="text4833"><tspan
+         sodipodi:role="line"
+         x="101.60463"
+         y="119.91571"
+         style="stroke-width:0.26458335"
+         id="tspan4831">UPPER</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:19.35389709px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458329"
+       x="106.54693"
+       y="136.46846"
+       id="text4837"><tspan
+         sodipodi:role="line"
+         id="tspan4835"
+         x="106.54693"
+         y="136.46846"
+         style="stroke-width:0.26458329">3</tspan></text>
+    <rect
+       ry="4.2049851"
+       y="149.00691"
+       x="27.616482"
+       height="26.458334"
+       width="26.458334"
+       id="rect4841"
+       style="opacity:1;fill:#fff176;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.79999995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+    <text
+       id="text4845"
+       y="130.14531"
+       x="37.256878"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:4.53905964px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458335"
+       xml:space="preserve"
+       transform="scale(0.8342803,1.1986379)"><tspan
+         id="tspan4843"
+         style="stroke-width:0.26458335"
+         y="130.14531"
+         x="37.256878"
+         sodipodi:role="line">LOW-SUB</tspan></text>
+    <text
+       id="text4849"
+       y="172.54985"
+       x="35.298416"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:19.35389709px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458329"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.26458329"
+         y="172.54985"
+         x="35.298416"
+         id="tspan4847"
+         sodipodi:role="line">1</tspan></text>
+    <rect
+       style="opacity:1;fill:#e040fb;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.79999995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="rect4878"
+       width="26.458334"
+       height="26.458334"
+       x="63.564232"
+       y="149.00691"
+       ry="4.2049851" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:5.44068909px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458335"
+       x="69.882294"
+       y="155.9971"
+       id="text4882"><tspan
+         sodipodi:role="line"
+         x="69.882294"
+         y="155.9971"
+         style="stroke-width:0.26458335"
+         id="tspan4880">LOW</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:19.35389709px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458329"
+       x="71.24617"
+       y="172.54985"
+       id="text4886"><tspan
+         sodipodi:role="line"
+         id="tspan4884"
+         x="71.24617"
+         y="172.54985"
+         style="stroke-width:0.26458329">1</tspan></text>
+    <rect
+       style="opacity:1;fill:#b2ff59;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.79999995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="rect4888"
+       width="26.458334"
+       height="26.458334"
+       x="98.86499"
+       y="149.00691"
+       ry="4.2049851" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:5.44068909px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458335"
+       x="102.32191"
+       y="155.9971"
+       id="text4892"><tspan
+         sodipodi:role="line"
+         x="102.32191"
+         y="155.9971"
+         style="stroke-width:0.26458335"
+         id="tspan4890">TOTAL</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:19.35389709px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458329"
+       x="106.54693"
+       y="172.54985"
+       id="text4896"><tspan
+         sodipodi:role="line"
+         id="tspan4894"
+         x="106.54693"
+         y="172.54985"
+         style="stroke-width:0.26458329">1</tspan></text>
+    <rect
+       ry="4.2049851"
+       y="149.00691"
+       x="133.26082"
+       height="26.458334"
+       width="26.458334"
+       id="rect4898"
+       style="opacity:1;fill:#76ff03;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.79999995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+    <text
+       id="text4902"
+       y="155.9971"
+       x="136.71773"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:5.44068909px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458335"
+       xml:space="preserve"><tspan
+         id="tspan4900"
+         style="stroke-width:0.26458335"
+         y="155.9971"
+         x="136.71773"
+         sodipodi:role="line">TOTAL</tspan></text>
+    <text
+       id="text4906"
+       y="172.54985"
+       x="140.94276"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:19.35389709px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458329"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.26458329"
+         y="172.54985"
+         x="140.94276"
+         id="tspan4904"
+         sodipodi:role="line">2</tspan></text>
+    <rect
+       style="opacity:1;fill:#0d47a1;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.80000007;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="rect4839-2"
+       width="211.66667"
+       height="105.83334"
+       x="-14.961697"
+       y="238.63048"
+       ry="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:7.05555534px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="-27.261492"
+       y="183.41045"
+       id="text4925"><tspan
+         sodipodi:role="line"
+         id="tspan4923"
+         x="-27.261492"
+         y="189.73631"
+         style="stroke-width:0.26458332"></tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4927"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:26.66666603px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.4757266"
+       transform="matrix(0.55616676,0,0,0.55616676,-4.4309364,-327.33611)"><flowRegion
+         id="flowRegion4929"
+         style="fill:#ffffff;stroke-width:0.4757266"><rect
+           id="rect4931"
+           width="688.57141"
+           height="300"
+           x="51.42857"
+           y="1033.9482"
+           style="fill:#ffffff;stroke-width:0.4757266" /></flowRegion><flowPara
+         id="flowPara4937"
+         style="stroke-width:0.4757266">Upper loom only</flowPara></flowRoot>    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:7.05555534px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="36.285713"
+       y="292.46429"
+       id="text4941"><tspan
+         sodipodi:role="line"
+         id="tspan4939"
+         x="36.285713"
+         y="298.79016"
+         style="stroke-width:0.26458332"></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:9.96587944px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#ff9e40;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="16.336784"
+       y="332.22412"
+       id="text4949"><tspan
+         sodipodi:role="line"
+         id="tspan4947"
+         x="16.336784"
+         y="332.22412"
+         style="fill:#ff9e40;stroke-width:0.26458332">Disconnect everything else</tspan></text>
+    <g
+       id="g5090">
+      <rect
+         y="101.5863"
+         x="-259.29166"
+         height="33.072918"
+         width="33.072918"
+         id="rect4974"
+         style="opacity:1;fill:#fff9c4;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.79999995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+      <text
+         id="text4978"
+         y="115.18423"
+         x="-256.17963"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="115.18423"
+           x="-256.17963"
+           id="tspan4976"
+           sodipodi:role="line">Amf</tspan></text>
+      <text
+         id="text4978-5"
+         y="129.65877"
+         x="-256.72867"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="129.65877"
+           x="-256.72867"
+           id="tspan4976-2"
+           sodipodi:role="line">SKT</tspan></text>
+    </g>
+    <g
+       id="g5097">
+      <rect
+         style="opacity:1;fill:#fff59d;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.79999995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         id="rect4998"
+         width="33.072918"
+         height="33.072918"
+         x="-212.6116"
+         y="101.5863" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="-206.41127"
+         y="115.18423"
+         id="text5002"><tspan
+           sodipodi:role="line"
+           id="tspan5000"
+           x="-206.41127"
+           y="115.18423"
+           style="stroke-width:0.26458332">Sol</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="-210.04861"
+         y="129.65877"
+         id="text5006"><tspan
+           sodipodi:role="line"
+           id="tspan5004"
+           x="-210.04861"
+           y="129.65877"
+           style="stroke-width:0.26458332">SKT</tspan></text>
+    </g>
+    <g
+       id="g5104">
+      <rect
+         y="101.5863"
+         x="-166.6875"
+         height="33.072918"
+         width="33.072918"
+         id="rect5008"
+         style="opacity:1;fill:#fff176;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.79999995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+      <text
+         transform="scale(0.89703004,1.1147899)"
+         id="text5012"
+         y="103.32372"
+         x="-182.14955"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:10.96343899px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="103.32372"
+           x="-182.14955"
+           id="tspan5010"
+           sodipodi:role="line">Dsub</tspan></text>
+      <text
+         id="text5016"
+         y="129.65877"
+         x="-164.12451"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="129.65877"
+           x="-164.12451"
+           id="tspan5014"
+           sodipodi:role="line">SKT</tspan></text>
+    </g>
+    <g
+       id="g5111">
+      <rect
+         style="opacity:1;fill:#ffee58;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.79999995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         id="rect5018"
+         width="33.072918"
+         height="33.072918"
+         x="-118.68452"
+         y="101.5863" />
+      <text
+         transform="scale(0.87809955,1.138823)"
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:10.73207188px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="-131.38011"
+         y="101.14322"
+         id="text5022"><tspan
+           sodipodi:role="line"
+           id="tspan5020"
+           x="-131.38011"
+           y="101.14322"
+           style="stroke-width:0.26458332">Head</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="-116.12154"
+         y="129.65877"
+         id="text5026"><tspan
+           sodipodi:role="line"
+           id="tspan5024"
+           x="-116.12154"
+           y="129.65877"
+           style="stroke-width:0.26458332">SKT</tspan></text>
+    </g>
+    <g
+       id="g5118">
+      <rect
+         style="opacity:1;fill:#e1bee7;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.79999995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         id="rect5028"
+         width="33.072918"
+         height="33.072918"
+         x="-259.29166"
+         y="148.83333" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="-256.17963"
+         y="162.43126"
+         id="text5032"><tspan
+           sodipodi:role="line"
+           id="tspan5030"
+           x="-256.17963"
+           y="162.43126"
+           style="stroke-width:0.26458332">Amf</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="-256.32285"
+         y="176.90579"
+         id="text5036"><tspan
+           sodipodi:role="line"
+           id="tspan5034"
+           x="-256.32285"
+           y="176.90579"
+           style="stroke-width:0.26458332">PLG</tspan></text>
+    </g>
+    <g
+       id="g5125">
+      <rect
+         y="148.83333"
+         x="-211.85565"
+         height="33.072918"
+         width="33.072918"
+         id="rect5038"
+         style="opacity:1;fill:#ce93d8;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.79999995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+      <text
+         transform="scale(0.90520397,1.1047234)"
+         id="text5042"
+         y="147.03342"
+         x="-230.43132"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:11.06334019px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="147.03342"
+           x="-230.43132"
+           id="tspan5040"
+           sodipodi:role="line">Main</tspan></text>
+      <text
+         id="text5046"
+         y="176.90579"
+         x="-208.88684"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="176.90579"
+           x="-208.88684"
+           id="tspan5044"
+           sodipodi:role="line">PLG</tspan></text>
+    </g>
+    <g
+       id="g5132">
+      <rect
+         style="opacity:1;fill:#ba68c8;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.79999995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         id="rect5048"
+         width="33.072918"
+         height="33.072918"
+         x="-164.79762"
+         y="148.83333" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="-161.68559"
+         y="162.43126"
+         id="text5052"><tspan
+           sodipodi:role="line"
+           id="tspan5050"
+           x="-161.68559"
+           y="162.43126"
+           style="stroke-width:0.26458332">Vac</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="-161.82881"
+         y="176.90579"
+         id="text5056"><tspan
+           sodipodi:role="line"
+           id="tspan5054"
+           x="-161.82881"
+           y="176.90579"
+           style="stroke-width:0.26458332">PLG</tspan></text>
+    </g>
+    <g
+       id="g5139">
+      <rect
+         y="148.83333"
+         x="-119.2515"
+         height="33.072918"
+         width="33.072918"
+         id="rect5058"
+         style="opacity:1;fill:#ab47bc;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.79999995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+      <text
+         id="text5062"
+         y="162.43126"
+         x="-116.13947"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="162.43126"
+           x="-116.13947"
+           id="tspan5060"
+           sodipodi:role="line">XLR</tspan></text>
+      <text
+         id="text5066"
+         y="176.90579"
+         x="-116.28268"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="176.90579"
+           x="-116.28268"
+           id="tspan5064"
+           sodipodi:role="line">PLG</tspan></text>
+    </g>
+    <g
+       id="g5083"
+       transform="translate(-12.294398,-20.847023)">
+      <rect
+         style="opacity:1;fill:#fff9c4;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.79999995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         id="rect5068"
+         width="33.072918"
+         height="33.072918"
+         x="60.362701"
+         y="297.76215" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="63.474731"
+         y="311.36008"
+         id="text5072"><tspan
+           sodipodi:role="line"
+           id="tspan5070"
+           x="63.474731"
+           y="311.36008"
+           style="stroke-width:0.26458332">Amf</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="62.92569"
+         y="325.83459"
+         id="text5076"><tspan
+           sodipodi:role="line"
+           id="tspan5074"
+           x="62.92569"
+           y="325.83459"
+           style="stroke-width:0.26458332">SKT</tspan></text>
+    </g>
+    <g
+       id="g5151"
+       transform="translate(312.70535,175.32882)">
+      <rect
+         y="101.5863"
+         x="-212.6116"
+         height="33.072918"
+         width="33.072918"
+         id="rect5141"
+         style="opacity:1;fill:#fff59d;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.79999995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+      <text
+         id="text5145"
+         y="115.18423"
+         x="-206.41127"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="115.18423"
+           x="-206.41127"
+           id="tspan5143"
+           sodipodi:role="line">Sol</tspan></text>
+      <text
+         id="text5149"
+         y="129.65877"
+         x="-210.04861"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="129.65877"
+           x="-210.04861"
+           id="tspan5147"
+           sodipodi:role="line">SKT</tspan></text>
+    </g>
+    <rect
+       ry="0"
+       y="238.63048"
+       x="220.77003"
+       height="105.83334"
+       width="211.66667"
+       id="rect5153"
+       style="opacity:1;fill:#0d47a1;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.80000007;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+    <flowRoot
+       transform="matrix(0.55616676,0,0,0.55616676,211.31717,-327.33611)"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:26.66666603px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.4757266"
+       id="flowRoot5161"
+       xml:space="preserve"><flowRegion
+         style="fill:#ffffff;stroke-width:0.4757266"
+         id="flowRegion5157"><rect
+           style="fill:#ffffff;stroke-width:0.4757266"
+           y="1033.9482"
+           x="51.42857"
+           height="300"
+           width="688.57141"
+           id="rect5155" /></flowRegion><flowPara
+         style="stroke-width:0.4757266"
+         id="flowPara5159">Lower sub-loom only</flowPara></flowRoot>    <text
+       id="text5165"
+       y="332.22412"
+       x="252.0685"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:9.96587944px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#ff9e40;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="fill:#ff9e40;stroke-width:0.26458332"
+         y="332.22412"
+         x="252.0685"
+         id="tspan5163"
+         sodipodi:role="line">Disconnect everything else</tspan></text>
+    <rect
+       style="opacity:1;fill:#0d47a1;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.80000007;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="rect5191"
+       width="211.66667"
+       height="105.83334"
+       x="454.36362"
+       y="238.63048"
+       ry="0" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5199"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:26.66666603px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.4757266"
+       transform="matrix(0.55616676,0,0,0.55616676,464.89436,-327.33611)"><flowRegion
+         id="flowRegion5195"
+         style="fill:#ffffff;stroke-width:0.4757266"><rect
+           id="rect5193"
+           width="688.57141"
+           height="300"
+           x="51.42857"
+           y="1033.9482"
+           style="fill:#ffffff;stroke-width:0.4757266" /></flowRegion><flowPara
+         id="flowPara5197"
+         style="stroke-width:0.4757266">Lower BEAM only</flowPara></flowRoot>    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:9.96587944px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#ff9e40;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="485.66208"
+       y="332.22412"
+       id="text5203"><tspan
+         sodipodi:role="line"
+         id="tspan5201"
+         x="485.66208"
+         y="332.22412"
+         style="fill:#ff9e40;stroke-width:0.26458332">Disconnect everything else</tspan></text>
+    <rect
+       ry="0"
+       y="360.33881"
+       x="-14.961697"
+       height="105.83334"
+       width="211.66667"
+       id="rect5229"
+       style="opacity:1;fill:#0d47a1;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.80000007;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+    <flowRoot
+       transform="matrix(0.55616676,0,0,0.55616676,-4.4309364,-205.62778)"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:26.66666603px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.4757266"
+       id="flowRoot5237"
+       xml:space="preserve"><flowRegion
+         style="fill:#ffffff;stroke-width:0.4757266"
+         id="flowRegion5233"><rect
+           style="fill:#ffffff;stroke-width:0.4757266"
+           y="1033.9482"
+           x="51.42857"
+           height="300"
+           width="688.57141"
+           id="rect5231" /></flowRegion><flowPara
+         style="stroke-width:0.4757266"
+         id="flowPara5235">Upper loom only</flowPara></flowRoot>    <text
+       id="text5241"
+       y="453.93246"
+       x="16.336784"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:9.96587944px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#ff9e40;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="fill:#ff9e40;stroke-width:0.26458332"
+         y="453.93246"
+         x="16.336784"
+         id="tspan5239"
+         sodipodi:role="line">Disconnect everything else</tspan></text>
+    <rect
+       style="opacity:1;fill:#0d47a1;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.80000007;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="rect5267"
+       width="211.66667"
+       height="105.83334"
+       x="-14.961697"
+       y="498.6781"
+       ry="0" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5275"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:26.66666603px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.4757266"
+       transform="matrix(0.55616676,0,0,0.55616676,-4.4309364,-67.288494)"><flowRegion
+         id="flowRegion5271"
+         style="fill:#ffffff;stroke-width:0.4757266"><rect
+           id="rect5269"
+           width="688.57141"
+           height="300"
+           x="51.42857"
+           y="1033.9482"
+           style="fill:#ffffff;stroke-width:0.4757266" /></flowRegion><flowPara
+         id="flowPara5273"
+         style="stroke-width:0.4757266">Upper loom only</flowPara></flowRoot>    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:9.96587944px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#ff9e40;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="16.336784"
+       y="592.27173"
+       id="text5279"><tspan
+         sodipodi:role="line"
+         id="tspan5277"
+         x="16.336784"
+         y="592.27173"
+         style="fill:#ff9e40;stroke-width:0.26458332">Disconnect everything else</tspan></text>
+    <rect
+       ry="0"
+       y="238.63048"
+       x="696.26837"
+       height="105.83334"
+       width="211.66667"
+       id="rect5374"
+       style="opacity:1;fill:#0d47a1;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.80000007;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+    <flowRoot
+       transform="matrix(0.55616676,0,0,0.55616676,686.14565,-327.33611)"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:26.66666603px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.4757266"
+       id="flowRoot5382"
+       xml:space="preserve"><flowRegion
+         style="fill:#ffffff;stroke-width:0.4757266"
+         id="flowRegion5378"><rect
+           style="fill:#ffffff;stroke-width:0.4757266"
+           y="1033.9482"
+           x="51.42857"
+           height="300"
+           width="688.57141"
+           id="rect5376" /></flowRegion><flowPara
+         style="stroke-width:0.4757266"
+         id="flowPara5380">TOTAL assembly only</flowPara></flowRoot>    <text
+       id="text5386"
+       y="332.22412"
+       x="727.56683"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:9.96587944px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#ff9e40;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="fill:#ff9e40;stroke-width:0.26458332"
+         y="332.22412"
+         x="727.56683"
+         id="tspan5384"
+         sodipodi:role="line">Disconnect everything else</tspan></text>
+    <g
+       transform="translate(-12.294398,100.10536)"
+       id="g5422">
+      <rect
+         y="297.76215"
+         x="60.362701"
+         height="33.072918"
+         width="33.072918"
+         id="rect5412"
+         style="opacity:1;fill:#fff9c4;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.79999995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+      <text
+         id="text5416"
+         y="311.36008"
+         x="63.474731"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="311.36008"
+           x="63.474731"
+           id="tspan5414"
+           sodipodi:role="line">Amf</tspan></text>
+      <text
+         id="text5420"
+         y="325.83459"
+         x="62.92569"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="325.83459"
+           x="62.92569"
+           id="tspan5418"
+           sodipodi:role="line">SKT</tspan></text>
+    </g>
+    <g
+       id="g5434"
+       transform="translate(267.60714,296.2812)">
+      <rect
+         style="opacity:1;fill:#fff176;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.79999995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         id="rect5424"
+         width="33.072918"
+         height="33.072918"
+         x="-166.6875"
+         y="101.5863" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:10.96343899px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="-182.14955"
+         y="103.32372"
+         id="text5428"
+         transform="scale(0.89703004,1.1147899)"><tspan
+           sodipodi:role="line"
+           id="tspan5426"
+           x="-182.14955"
+           y="103.32372"
+           style="stroke-width:0.26458332">Dsub</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="-164.12451"
+         y="129.65877"
+         id="text5432"><tspan
+           sodipodi:role="line"
+           id="tspan5430"
+           x="-164.12451"
+           y="129.65877"
+           style="stroke-width:0.26458332">SKT</tspan></text>
+    </g>
+    <g
+       id="g5446"
+       transform="translate(167.82143,388.55952)">
+      <rect
+         style="opacity:1;fill:#ab47bc;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.79999995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         id="rect5436"
+         width="33.072918"
+         height="33.072918"
+         x="-119.2515"
+         y="148.83333" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="-116.13947"
+         y="162.43126"
+         id="text5440"><tspan
+           sodipodi:role="line"
+           id="tspan5438"
+           x="-116.13947"
+           y="162.43126"
+           style="stroke-width:0.26458332">XLR</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="-116.28268"
+         y="176.90579"
+         id="text5444"><tspan
+           sodipodi:role="line"
+           id="tspan5442"
+           x="-116.28268"
+           y="176.90579"
+           style="stroke-width:0.26458332">PLG</tspan></text>
+    </g>
+    <g
+       transform="translate(267.60714,435.80654)"
+       id="g5458">
+      <rect
+         y="101.5863"
+         x="-166.6875"
+         height="33.072918"
+         width="33.072918"
+         id="rect5448"
+         style="opacity:1;fill:#fff176;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.79999995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+      <text
+         transform="scale(0.89703004,1.1147899)"
+         id="text5452"
+         y="103.32372"
+         x="-182.14955"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:10.96343899px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="103.32372"
+           x="-182.14955"
+           id="tspan5450"
+           sodipodi:role="line">Dsub</tspan></text>
+      <text
+         id="text5456"
+         y="129.65877"
+         x="-164.12451"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="129.65877"
+           x="-164.12451"
+           id="tspan5454"
+           sodipodi:role="line">SKT</tspan></text>
+    </g>
+    <g
+       id="g5470"
+       transform="translate(454.32738,175.26912)">
+      <rect
+         y="101.5863"
+         x="-118.68452"
+         height="33.072918"
+         width="33.072918"
+         id="rect5460"
+         style="opacity:1;fill:#ffee58;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.79999995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+      <text
+         id="text5464"
+         y="101.14322"
+         x="-131.38011"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:10.73207188px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"
+         transform="scale(0.87809955,1.138823)"><tspan
+           style="stroke-width:0.26458332"
+           y="101.14322"
+           x="-131.38011"
+           id="tspan5462"
+           sodipodi:role="line">Head</tspan></text>
+      <text
+         id="text5468"
+         y="129.65877"
+         x="-116.12154"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="129.65877"
+           x="-116.12154"
+           id="tspan5466"
+           sodipodi:role="line">SKT</tspan></text>
+    </g>
+    <g
+       id="g5482"
+       transform="translate(539.3499,128.0221)">
+      <rect
+         y="148.83333"
+         x="-259.29166"
+         height="33.072918"
+         width="33.072918"
+         id="rect5472"
+         style="opacity:1;fill:#e1bee7;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.79999995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+      <text
+         id="text5476"
+         y="162.43126"
+         x="-256.17963"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="162.43126"
+           x="-256.17963"
+           id="tspan5474"
+           sodipodi:role="line">Amf</tspan></text>
+      <text
+         id="text5480"
+         y="176.90579"
+         x="-256.32285"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="176.90579"
+           x="-256.32285"
+           id="tspan5478"
+           sodipodi:role="line">PLG</tspan></text>
+    </g>
+    <g
+       id="g5576"
+       transform="translate(3.0741434,-6.3500003)">
+      <g
+         transform="translate(752.63099,134.70384)"
+         id="g5532">
+        <rect
+           style="opacity:1;fill:#e1bee7;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.79999995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+           id="rect5522"
+           width="33.072918"
+           height="33.072918"
+           x="-259.29166"
+           y="148.83333" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="-256.17963"
+           y="162.43126"
+           id="text5526"><tspan
+             sodipodi:role="line"
+             id="tspan5524"
+             x="-256.17963"
+             y="162.43126"
+             style="stroke-width:0.26458332">Amf</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="-256.32285"
+           y="176.90579"
+           id="text5530"><tspan
+             sodipodi:role="line"
+             id="tspan5528"
+             x="-256.32285"
+             y="176.90579"
+             style="stroke-width:0.26458332">PLG</tspan></text>
+      </g>
+      <g
+         transform="translate(752.63099,134.70384)"
+         id="g5544">
+        <rect
+           y="148.83333"
+           x="-211.85565"
+           height="33.072918"
+           width="33.072918"
+           id="rect5534"
+           style="opacity:1;fill:#ce93d8;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.79999995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+        <text
+           transform="scale(0.90520397,1.1047234)"
+           id="text5538"
+           y="147.03342"
+           x="-230.43132"
+           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:11.06334019px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           xml:space="preserve"><tspan
+             style="stroke-width:0.26458332"
+             y="147.03342"
+             x="-230.43132"
+             id="tspan5536"
+             sodipodi:role="line">Main</tspan></text>
+        <text
+           id="text5542"
+           y="176.90579"
+           x="-208.88684"
+           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           xml:space="preserve"><tspan
+             style="stroke-width:0.26458332"
+             y="176.90579"
+             x="-208.88684"
+             id="tspan5540"
+             sodipodi:role="line">PLG</tspan></text>
+      </g>
+      <g
+         transform="translate(752.63099,134.70384)"
+         id="g5556">
+        <rect
+           style="opacity:1;fill:#ba68c8;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.79999995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+           id="rect5546"
+           width="33.072918"
+           height="33.072918"
+           x="-164.79762"
+           y="148.83333" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="-161.68559"
+           y="162.43126"
+           id="text5550"><tspan
+             sodipodi:role="line"
+             id="tspan5548"
+             x="-161.68559"
+             y="162.43126"
+             style="stroke-width:0.26458332">Vac</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="-161.82881"
+           y="176.90579"
+           id="text5554"><tspan
+             sodipodi:role="line"
+             id="tspan5552"
+             x="-161.82881"
+             y="176.90579"
+             style="stroke-width:0.26458332">PLG</tspan></text>
+      </g>
+    </g>
+    <rect
+       style="opacity:1;fill:#0d47a1;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.80000007;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="rect5578"
+       width="211.66667"
+       height="105.83334"
+       x="696.26837"
+       y="367.98892"
+       ry="0" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5586"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:26.66666603px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.4757266"
+       transform="matrix(0.55616676,0,0,0.55616676,686.14565,-197.97766)"><flowRegion
+         id="flowRegion5582"
+         style="fill:#ffffff;stroke-width:0.4757266"><rect
+           id="rect5580"
+           width="688.57141"
+           height="300"
+           x="51.42857"
+           y="1033.9482"
+           style="fill:#ffffff;stroke-width:0.4757266" /></flowRegion><flowPara
+         id="flowPara5584"
+         style="stroke-width:0.4757266">TOTAL assembly only</flowPara></flowRoot>    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:9.96587944px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#ff9e40;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="727.56683"
+       y="461.58258"
+       id="text5590"><tspan
+         sodipodi:role="line"
+         id="tspan5588"
+         x="727.56683"
+         y="461.58258"
+         style="fill:#ff9e40;stroke-width:0.26458332">Disconnect everything else</tspan></text>
+    <g
+       id="g5664"
+       transform="translate(5.2862194)">
+      <g
+         transform="translate(922.61441,128.28937)"
+         id="g5602">
+        <rect
+           y="148.83333"
+           x="-211.85565"
+           height="33.072918"
+           width="33.072918"
+           id="rect5592"
+           style="opacity:1;fill:#ce93d8;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.79999995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+        <text
+           transform="scale(0.90520397,1.1047234)"
+           id="text5596"
+           y="147.03342"
+           x="-230.43132"
+           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:11.06334019px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           xml:space="preserve"><tspan
+             style="stroke-width:0.26458332"
+             y="147.03342"
+             x="-230.43132"
+             id="tspan5594"
+             sodipodi:role="line">Main</tspan></text>
+        <text
+           id="text5600"
+           y="176.90579"
+           x="-208.88684"
+           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           xml:space="preserve"><tspan
+             style="stroke-width:0.26458332"
+             y="176.90579"
+             x="-208.88684"
+             id="tspan5598"
+             sodipodi:role="line">PLG</tspan></text>
+      </g>
+      <g
+         transform="translate(922.61441,128.28937)"
+         id="g5614">
+        <rect
+           style="opacity:1;fill:#ba68c8;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.79999995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+           id="rect5604"
+           width="33.072918"
+           height="33.072918"
+           x="-164.79762"
+           y="148.83333" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="-161.68559"
+           y="162.43126"
+           id="text5608"><tspan
+             sodipodi:role="line"
+             id="tspan5606"
+             x="-161.68559"
+             y="162.43126"
+             style="stroke-width:0.26458332">Vac</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="-161.82881"
+           y="176.90579"
+           id="text5612"><tspan
+             sodipodi:role="line"
+             id="tspan5610"
+             x="-161.82881"
+             y="176.90579"
+             style="stroke-width:0.26458332">PLG</tspan></text>
+      </g>
+      <g
+         transform="translate(922.61441,128.28937)"
+         id="g5626">
+        <rect
+           y="148.83333"
+           x="-119.2515"
+           height="33.072918"
+           width="33.072918"
+           id="rect5616"
+           style="opacity:1;fill:#ab47bc;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.79999995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+        <text
+           id="text5620"
+           y="162.43126"
+           x="-116.13947"
+           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           xml:space="preserve"><tspan
+             style="stroke-width:0.26458332"
+             y="162.43126"
+             x="-116.13947"
+             id="tspan5618"
+             sodipodi:role="line">XLR</tspan></text>
+        <text
+           id="text5624"
+           y="176.90579"
+           x="-116.28268"
+           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           xml:space="preserve"><tspan
+             style="stroke-width:0.26458332"
+             y="176.90579"
+             x="-116.28268"
+             id="tspan5622"
+             sodipodi:role="line">PLG</tspan></text>
+      </g>
+      <g
+         transform="translate(1016.4868,175.53639)"
+         id="g5638">
+        <rect
+           y="101.5863"
+           x="-166.6875"
+           height="33.072918"
+           width="33.072918"
+           id="rect5628"
+           style="opacity:1;fill:#fff176;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.79999995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+        <text
+           transform="scale(0.89703004,1.1147899)"
+           id="text5632"
+           y="103.32372"
+           x="-182.14955"
+           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:10.96343899px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           xml:space="preserve"><tspan
+             style="stroke-width:0.26458332"
+             y="103.32372"
+             x="-182.14955"
+             id="tspan5630"
+             sodipodi:role="line">Dsub</tspan></text>
+        <text
+           id="text5636"
+           y="129.65877"
+           x="-164.12451"
+           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           xml:space="preserve"><tspan
+             style="stroke-width:0.26458332"
+             y="129.65877"
+             x="-164.12451"
+             id="tspan5634"
+             sodipodi:role="line">SKT</tspan></text>
+      </g>
+    </g>
+    <g
+       transform="translate(927.90063,258.7169)"
+       id="g5676">
+      <rect
+         y="148.83333"
+         x="-211.85565"
+         height="33.072918"
+         width="33.072918"
+         id="rect5666"
+         style="opacity:1;fill:#ce93d8;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.79999995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+      <text
+         transform="scale(0.90520397,1.1047234)"
+         id="text5670"
+         y="147.03342"
+         x="-230.43132"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:11.06334019px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="147.03342"
+           x="-230.43132"
+           id="tspan5668"
+           sodipodi:role="line">Main</tspan></text>
+      <text
+         id="text5674"
+         y="176.90579"
+         x="-208.88684"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="176.90579"
+           x="-208.88684"
+           id="tspan5672"
+           sodipodi:role="line">PLG</tspan></text>
+    </g>
+    <g
+       transform="translate(927.90063,258.7169)"
+       id="g5688">
+      <rect
+         style="opacity:1;fill:#ba68c8;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.79999995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         id="rect5678"
+         width="33.072918"
+         height="33.072918"
+         x="-164.79762"
+         y="148.83333" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="-161.68559"
+         y="162.43126"
+         id="text5682"><tspan
+           sodipodi:role="line"
+           id="tspan5680"
+           x="-161.68559"
+           y="162.43126"
+           style="stroke-width:0.26458332">Vac</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="-161.82881"
+         y="176.90579"
+         id="text5686"><tspan
+           sodipodi:role="line"
+           id="tspan5684"
+           x="-161.82881"
+           y="176.90579"
+           style="stroke-width:0.26458332">PLG</tspan></text>
+    </g>
+    <g
+       transform="translate(927.90063,258.7169)"
+       id="g5700">
+      <rect
+         y="148.83333"
+         x="-119.2515"
+         height="33.072918"
+         width="33.072918"
+         id="rect5690"
+         style="opacity:1;fill:#ab47bc;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.79999995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+      <text
+         id="text5694"
+         y="162.43126"
+         x="-116.13947"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="162.43126"
+           x="-116.13947"
+           id="tspan5692"
+           sodipodi:role="line">XLR</tspan></text>
+      <text
+         id="text5698"
+         y="176.90579"
+         x="-116.28268"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="176.90579"
+           x="-116.28268"
+           id="tspan5696"
+           sodipodi:role="line">PLG</tspan></text>
+    </g>
+    <g
+       id="g5750"
+       transform="translate(1067.5628,305.96392)">
+      <rect
+         y="101.5863"
+         x="-212.6116"
+         height="33.072918"
+         width="33.072918"
+         id="rect5740"
+         style="opacity:1;fill:#fff59d;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.79999995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+      <text
+         id="text5744"
+         y="115.18423"
+         x="-206.41127"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="115.18423"
+           x="-206.41127"
+           id="tspan5742"
+           sodipodi:role="line">Sol</tspan></text>
+      <text
+         id="text5748"
+         y="129.65877"
+         x="-210.04861"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="129.65877"
+           x="-210.04861"
+           id="tspan5746"
+           sodipodi:role="line">SKT</tspan></text>
+    </g>
+  </g>
+</svg>
