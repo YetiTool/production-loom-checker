@@ -7,7 +7,7 @@ Intended for RasPi with Rasbian Lite & use with 7" touchscreen.
 
 ### Preparation
 
-These steps follow the same build steps use to prepared an EasyCut console platform (see [Readme](https://github.com/YetiTool/easycut-smartbench)). When that's complete, procede...
+These steps follow the same build steps use to prepared an EasyCut console platform (see [Readme](https://github.com/YetiTool/console-raspi3b-plus-platform)). When that's complete, procede...
 
 ### App installation
 
