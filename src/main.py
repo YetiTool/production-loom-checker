@@ -22,7 +22,6 @@ from kivy.core.window import Window
 
 
 import screen_lobby
-import screen_upper_loom
 import screen_settings
 import screen_intro
 import screen_result
