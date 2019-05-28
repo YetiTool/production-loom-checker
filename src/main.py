@@ -23,7 +23,6 @@ from kivy.core.window import Window
 
 import screen_lobby
 import screen_upper_loom
-import rpi_test
 import screen_settings
 import screen_intro
 import screen_result
@@ -41,7 +40,6 @@ class LoomChecker(App):
 
         # initialise the screens
         lobby_screen = screen_lobby.LobbyScreen(name='lobby', screen_manager = sm)
-#         rpi_test_screen = rpi_test.RpiTestScreen(name='rpi_test', screen_manager = sm)
         settings_screen = screen_settings.SettingsScreen(name='settings_screen', screen_manager = sm)
         intro_screen = screen_intro.IntroScreen(name='intro_screen', screen_manager = sm)
         result_screen = screen_result.ResultScreen(name='result_screen', screen_manager = sm)
@@ -50,7 +48,6 @@ class LoomChecker(App):
 
         # add the screens to screen manager
         sm.add_widget(lobby_screen)
-#         sm.add_widget(rpi_test_screen)
         sm.add_widget(settings_screen)
         sm.add_widget(intro_screen)
         sm.add_widget(result_screen)

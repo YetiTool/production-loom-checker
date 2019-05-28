@@ -59,8 +59,8 @@ Builder.load_string("""
                 id:report_button
                 font_size: '30sp'
                 markup: True
-                text: 'Report'
-                on_press: root.sm.current = 'lobby'
+                text: 'Plg/Skt ref'
+                on_press: root.sm.current = 'intro_screen'
     
             Button:
                 font_size: '30sp'
