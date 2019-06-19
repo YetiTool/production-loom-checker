@@ -76,8 +76,7 @@ Builder.load_string("""
                 size_hint_y: 1
                 font_size: '15sp'
                 text: 'Settings'
-
-
+        
 
 <IconSet>
 

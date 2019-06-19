@@ -15,7 +15,10 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
-   sodipodi:docname="Loom checker graphics.svg">
+   sodipodi:docname="Graphics source.svg"
+   inkscape:export-filename="C:\Users\Ed\Desktop\icon.png"
+   inkscape:export-xdpi="20.3652"
+   inkscape:export-ydpi="20.3652">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -25,16 +28,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.24748737"
-     inkscape:cx="1612.7937"
-     inkscape:cy="24.620844"
+     inkscape:zoom="0.98994948"
+     inkscape:cx="-647.27376"
+     inkscape:cy="-143.77481"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g5047"
      showgrid="false"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
-     inkscape:window-x="2152"
-     inkscape:window-y="149"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata5">
@@ -44,7 +47,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -57,8 +60,8 @@
        id="rect4839"
        width="211.66666"
        height="127"
-       x="-15.686011"
-       y="91.380943"
+       x="-13.547855"
+       y="86.570091"
        ry="0" />
     <rect
        style="opacity:1;fill:#ff8a65;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.79999995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
@@ -300,7 +303,7 @@
          id="tspan4923"
          x="-27.261492"
          y="189.73631"
-         style="stroke-width:0.26458332"></tspan></text>
+         style="stroke-width:0.26458332" /></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot4927"
@@ -325,7 +328,7 @@
          id="tspan4939"
          x="36.285713"
          y="298.79016"
-         style="stroke-width:0.26458332"></tspan></text>
+         style="stroke-width:0.26458332" /></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:9.96587944px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#ff9e40;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -1435,6 +1438,168 @@
            x="-210.04861"
            id="tspan5746"
            sodipodi:role="line">SKT</tspan></text>
+    </g>
+    <rect
+       style="opacity:1;fill:#ffcc00;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.79999995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="rect5001"
+       width="26.458334"
+       height="26.458334"
+       x="133.52809"
+       y="113.46007"
+       ry="4.2049851"
+       inkscape:export-filename="C:\Users\Ed\Desktop\icon.png"
+       inkscape:export-xdpi="20.3652"
+       inkscape:export-ydpi="20.3652" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:4.67424822px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458335"
+       x="158.21579"
+       y="103.48218"
+       id="text5005"
+       transform="scale(0.85912793,1.163971)"
+       inkscape:export-filename="C:\Users\Ed\Desktop\icon.png"
+       inkscape:export-xdpi="20.3652"
+       inkscape:export-ydpi="20.3652"><tspan
+         sodipodi:role="line"
+         x="158.21579"
+         y="103.48218"
+         style="stroke-width:0.26458335"
+         id="tspan5003">CONSOLE</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:19.35389709px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458329"
+       x="141.21004"
+       y="137.00301"
+       id="text5009"
+       inkscape:export-filename="C:\Users\Ed\Desktop\icon.png"
+       inkscape:export-xdpi="20.3652"
+       inkscape:export-ydpi="20.3652"><tspan
+         sodipodi:role="line"
+         id="tspan5007"
+         x="141.21004"
+         y="137.00301"
+         style="stroke-width:0.26458329">1</tspan></text>
+    <rect
+       style="opacity:1;fill:#0d47a1;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.80000007;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="rect5011"
+       width="211.66667"
+       height="105.83334"
+       x="-270.59903"
+       y="243.1662"
+       ry="0"
+       inkscape:export-filename="C:\Users\Ed\Desktop\intro_img.png"
+       inkscape:export-xdpi="95.999985"
+       inkscape:export-ydpi="95.999985" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5019"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:26.66666603px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.4757266"
+       transform="matrix(0.55616676,0,0,0.55616676,-268.12834,-322.8004)"
+       inkscape:export-filename="C:\Users\Ed\Desktop\intro_img.png"
+       inkscape:export-xdpi="95.999985"
+       inkscape:export-ydpi="95.999985"><flowRegion
+         id="flowRegion5015"
+         style="fill:#ffffff;stroke-width:0.4757266"><rect
+           id="rect5013"
+           width="688.57141"
+           height="300"
+           x="51.42857"
+           y="1033.9482"
+           style="fill:#ffffff;stroke-width:0.4757266" /></flowRegion><flowPara
+         id="flowPara5017"
+         style="stroke-width:0.4757266">Console loom only</flowPara></flowRoot>    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:9.96587944px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#ff9e40;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="-239.30055"
+       y="336.75983"
+       id="text5023"
+       inkscape:export-filename="C:\Users\Ed\Desktop\intro_img.png"
+       inkscape:export-xdpi="95.999985"
+       inkscape:export-ydpi="95.999985"><tspan
+         sodipodi:role="line"
+         id="tspan5021"
+         x="-239.30055"
+         y="336.75983"
+         style="fill:#ff9e40;stroke-width:0.26458332">Disconnect everything else</tspan></text>
+    <g
+       transform="translate(-37.041674,179.80483)"
+       id="g5035"
+       inkscape:export-filename="C:\Users\Ed\Desktop\intro_img.png"
+       inkscape:export-xdpi="95.999985"
+       inkscape:export-ydpi="95.999985">
+      <rect
+         style="opacity:1;fill:#ffee58;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.79999995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         id="rect5025"
+         width="33.072918"
+         height="33.072918"
+         x="-118.68452"
+         y="101.5863" />
+      <text
+         transform="scale(0.97870879,1.0217544)"
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:11.96171093px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="-117.87793"
+         y="112.73181"
+         id="text5029"><tspan
+           sodipodi:role="line"
+           id="tspan5027"
+           x="-117.87793"
+           y="112.73181"
+           style="stroke-width:0.26458332">XLR</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="-116.12154"
+         y="129.65877"
+         id="text5033"><tspan
+           sodipodi:role="line"
+           id="tspan5031"
+           x="-116.12154"
+           y="129.65877"
+           style="stroke-width:0.26458332">SKT</tspan></text>
+    </g>
+    <g
+       transform="translate(47.980846,132.55781)"
+       id="g5047">
+      <rect
+         style="opacity:1;fill:#00cc00;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.79999995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         id="rect5037"
+         width="33.072918"
+         height="33.072918"
+         x="-259.29166"
+         y="148.83333"
+         inkscape:export-filename="C:\Users\Ed\Desktop\intro_img.png"
+         inkscape:export-xdpi="95.999985"
+         inkscape:export-ydpi="95.999985" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:10.89646626px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="-287.12753"
+         y="144.81564"
+         id="text5041"
+         transform="scale(0.89155035,1.1216416)"
+         inkscape:export-filename="C:\Users\Ed\Desktop\intro_img.png"
+         inkscape:export-xdpi="95.999985"
+         inkscape:export-ydpi="95.999985"><tspan
+           sodipodi:role="line"
+           id="tspan5039"
+           x="-287.12753"
+           y="144.81564"
+           style="stroke-width:0.26458332">RJ45</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:12.2219305px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="-256.32285"
+         y="176.90579"
+         id="text5045"
+         inkscape:export-filename="C:\Users\Ed\Desktop\intro_img.png"
+         inkscape:export-xdpi="95.999985"
+         inkscape:export-ydpi="95.999985"><tspan
+           sodipodi:role="line"
+           id="tspan5043"
+           x="-256.32285"
+           y="176.90579"
+           style="stroke-width:0.26458332">SKT</tspan></text>
     </g>
   </g>
 </svg>
