@@ -3,6 +3,7 @@ Created on 16 Nov 2017
 @author: eD
 A production console to check looms/wire harnesses for correct pin assignment, continuity and dead shorts
 www.yetitool.com
+
 '''
 import time
 
